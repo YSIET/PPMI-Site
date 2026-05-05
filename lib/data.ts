@@ -1,0 +1,119 @@
+// 사이트 전체에서 사용하는 콘텐츠 데이터
+// 한국어/영어 병행
+
+export const siteConfig = {
+    name: "PPMI",
+    fullName: "주식회사 피피엠아이",
+    fullNameEn: "PPMI Inc.",
+    tagline: {
+      ko: "데이터의 생산자",
+      en: "The Data Creator",
+    },
+    description: {
+      ko: "20년 분석 기술 기반 헬스케어 데이터 기업",
+      en: "Healthcare Data Company Based on 20 Years of Analytical Technology",
+    },
+    url: "https://ppmi.kr",
+    email: "contact@ppmi.kr",
+  };
+  
+  export const heroContent = {
+    ko: {
+      eyebrow: "AI 시대, 데이터의 생산자",
+      headline: "검사가 솔루션이 되는\n헬스케어 데이터 기업",
+      subheadline:
+        "PPMI는 20년 분석 기술을 기반으로 사람과 반려동물의 생체 데이터를 직접 생성하고 해석합니다.",
+    },
+    en: {
+      eyebrow: "In the Age of AI, We Create the Data",
+      headline: "Where Testing\nBecomes Solutions",
+      subheadline:
+        "PPMI generates and interprets biological data for humans and pets, built on 20 years of analytical expertise.",
+    },
+  };
+  
+  export const stats = [
+    { value: 20, suffix: "+", label: { ko: "년 분석 기술", en: "Years of Expertise" } },
+    { value: 1, suffix: "", label: { ko: "국내 유일 국제공인시험기관", en: "KOLAS Certified" } },
+    { value: 3, suffix: "", label: { ko: "헬스케어 브랜드", en: "Healthcare Brands" } },
+    { value: 2, suffix: "", label: { ko: "사람 + 반려동물 시장", en: "Human + Pet Markets" } },
+  ];
+  
+  export const brands = [
+    {
+      id: "balancelab",
+      name: "Balance Lab",
+      nameKo: "밸런스랩",
+      tagline: { ko: "Find your balance", en: "Find your balance" },
+      description: {
+        ko: "내 몸의 균형을 찾는 가장 과학적인 헬스케어 솔루션. 정밀 검사부터 맞춤 영양제 구독까지.",
+        en: "The most scientific healthcare solution to find your body's balance. From precise testing to personalized nutrition subscription.",
+      },
+      market: { ko: "사람 헬스케어", en: "Human Healthcare" },
+      color: "#7B9EAE",
+      href: "/balancelab",
+    },
+    {
+      id: "ironpet",
+      name: "IRONPET",
+      nameKo: "아이언펫",
+      tagline: { ko: "건강한 습관의 완성", en: "Completing Healthy Habits" },
+      description: {
+        ko: "말 못 하는 반려동물이 아프기 전에 관리하는 헬스케어 서비스. 펫 모발검사로 영양 불균형을 조기 발견합니다.",
+        en: "Healthcare for pets who can't speak — detect nutritional imbalances early through hair analysis.",
+      },
+      market: { ko: "반려동물 헬스케어", en: "Pet Healthcare" },
+      color: "#D4794A",
+      href: "/ironpet",
+    },
+    {
+      id: "nutty",
+      name: "NUT:TY",
+      nameKo: "너티",
+      tagline: { ko: "건강한 한 입, 맛있는 습관", en: "Healthy Bite, Tasty Habit" },
+      description: {
+        ko: "아이언펫의 반려동물 건강 데이터를 기반으로 영양부터 꼼꼼하게 설계한 펫푸드 브랜드.",
+        en: "A pet food brand designed with nutritional precision, based on IRONPET's pet health data.",
+      },
+      market: { ko: "반려동물 펫푸드", en: "Pet Food" },
+      color: "#C9A84C",
+      href: "/nutty",
+    },
+  ];
+  
+  export const team = [
+    {
+      name: "이태규",
+      nameEn: "Tae-Kyu Lee",
+      role: { ko: "대표이사 / CEO", en: "CEO" },
+      credentials: { ko: "MIT 석사 · 공학박사 · 연세대 교수", en: "MIT M.S. · Ph.D. · Professor, Yonsei University" },
+    },
+    {
+      name: "김승현",
+      nameEn: "Seung-Hyun Kim",
+      role: { ko: "최고재무책임자 / CFO", en: "CFO" },
+      credentials: { ko: "Yale MBA · BCG 출신", en: "Yale MBA · Ex-BCG" },
+    },
+    {
+      name: "엄유진",
+      nameEn: "Yu-Jin Eom",
+      role: { ko: "최고기술책임자 / CTO", en: "CTO" },
+      credentials: { ko: "연세대 박사 · 분석기술 전문", en: "Ph.D., Yonsei University · Analytical Expert" },
+    },
+    {
+      name: "조영광",
+      nameEn: "Young-Kwang Cho",
+      role: { ko: "수의 책임자 / CVO", en: "Chief Veterinary Officer" },
+      credentials: { ko: "수의사 · 반려동물 건강 전문", en: "DVM · Pet Health Specialist" },
+    },
+  ];
+  
+  export const navLinks = [
+    { href: "/", label: { ko: "홈", en: "Home" } },
+    { href: "/about", label: { ko: "회사소개", en: "About" } },
+    { href: "/balancelab", label: { ko: "밸런스랩", en: "Balance Lab" } },
+    { href: "/ironpet", label: { ko: "아이언펫", en: "IRONPET" } },
+    { href: "/nutty", label: { ko: "너티", en: "NUT:TY" } },
+    { href: "/invest", label: { ko: "투자자", en: "Investors" } },
+    { href: "/careers", label: { ko: "채용", en: "Careers" } },
+  ];

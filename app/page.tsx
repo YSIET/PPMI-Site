@@ -1,65 +1,131 @@
-import Image from "next/image";
+import Hero from "@/components/sections/Hero";
+import Stats from "@/components/sections/Stats";
+import BrandShowcase from "@/components/sections/BrandShowcase";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <>
+      <Hero />
+      <Stats />
+      <BrandShowcase />
+
+      {/* 회사 미션 섹션 */}
+      <section className="py-12 md:py-16 bg-white relative">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            <div className="lg:col-span-5">
+              <div className="text-eyebrow text-ppmi-red mb-3">Why PPMI</div>
+              <h2 className="text-display text-3xl md:text-4xl lg:text-5xl text-text leading-[1.1]">
+                AI 시대,
+                <br />
+                <span className="text-gradient">데이터의 생산자</span>
+                <br />
+                가 되는 것
+              </h2>
+            </div>
+            <div className="lg:col-span-7 space-y-6">
+              <p className="text-lg text-text leading-relaxed">
+                AI는 결국 데이터의 게임입니다. PPMI는 단순히 AI를 활용하는 회사가
+                아닌,{" "}
+                <span className="text-ppmi-red font-semibold">
+                  자체적으로 생체 데이터를 직접 생성하고 해석하는
+                </span>{" "}
+                헬스케어 데이터 기업입니다.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                {[
+                  {
+                    title: "20년 분석 기술",
+                    desc: "축적된 분석 노하우와 데이터베이스",
+                  },
+                  {
+                    title: "국제공인시험기관",
+                    desc: "국내 유일 KOLAS 인증 분석력",
+                  },
+                  {
+                    title: "수직 통합형",
+                    desc: "검사 → 분석 → 솔루션까지",
+                  },
+                  {
+                    title: "듀얼 마켓",
+                    desc: "사람 + 반려동물 동시 공략",
+                  },
+                ].map((item) => (
+                  <div
+                    key={item.title}
+                    className="p-5 rounded-xl bg-primary-soft/30 border border-primary/15"
+                  >
+                    <div className="text-text font-semibold mb-1">{item.title}</div>
+                    <div className="text-sm text-text-soft leading-relaxed">
+                      {item.desc}
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <div className="pt-2">
+                <Link
+                  href="/about"
+                  className="group inline-flex items-center gap-2 text-primary-dark font-medium hover:text-primary transition-colors"
+                >
+                  더 자세히 알아보기
+                  <ArrowRight
+                    size={18}
+                    className="group-hover:translate-x-1 transition-transform"
+                  />
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* CTA 섹션 — 투자/채용 (Tiffany Blue 액센트) */}
+      <section className="py-12 md:py-16 bg-primary text-white relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-[60%] h-full bg-gradient-to-l from-primary-dark/40 to-transparent" />
+        <div className="absolute -bottom-32 -left-32 w-[40%] h-[60%] bg-gradient-to-tr from-primary-dark/35 to-transparent rounded-full blur-3xl" />
+
+        <div className="relative max-w-[1400px] mx-auto px-6 lg:px-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <Link
+              href="/invest"
+              className="group relative overflow-hidden rounded-2xl border border-white/25 hover:border-white p-7 lg:p-10 transition-all bg-white/[0.06]"
+            >
+              <div className="absolute -top-20 -right-20 w-72 h-72 rounded-full bg-ppmi-red/15 blur-3xl group-hover:bg-ppmi-red/30 transition-all" />
+              <div className="relative">
+                <div className="text-eyebrow text-ppmi-red mb-3">For Investors</div>
+                <h3 className="text-display text-3xl lg:text-4xl mb-3">
+                  투자자 IR
+                  <ArrowRight className="inline-block ml-3 group-hover:translate-x-2 transition-transform" />
+                </h3>
+                <p className="text-white/85 leading-relaxed">
+                  초기 스타트업의 역동성과 폭발적인 성장 가능성. 검사부터 솔루션까지,
+                  수직통합형 헬스케어 데이터 비즈니스를 만나보세요.
+                </p>
+              </div>
+            </Link>
+
+            <Link
+              href="/careers"
+              className="group relative overflow-hidden rounded-2xl border border-white/25 hover:border-white p-7 lg:p-10 transition-all bg-white/[0.06]"
+            >
+              <div className="absolute -top-20 -right-20 w-72 h-72 rounded-full bg-white/10 blur-3xl group-hover:bg-white/20 transition-all" />
+              <div className="relative">
+                <div className="text-eyebrow text-white/90 mb-3">Join Us</div>
+                <h3 className="text-display text-3xl lg:text-4xl mb-3">
+                  함께할 동료
+                  <ArrowRight className="inline-block ml-3 group-hover:translate-x-2 transition-transform" />
+                </h3>
+                <p className="text-white/85 leading-relaxed">
+                  연세대·MIT·Yale 출신과 함께, 데이터로 헬스케어를 바꿉니다. 우리의
+                  여정에 동참할 사람을 찾고 있습니다.
+                </p>
+              </div>
+            </Link>
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+    </>
   );
 }
