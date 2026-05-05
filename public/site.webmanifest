@@ -1,0 +1,21 @@
+{
+  "name": "PPMI · 주식회사 피피엠아이",
+  "short_name": "PPMI",
+  "description": "데이터의 생산자, 헬스케어 데이터 기업",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#C8102E",
+  "background_color": "#FAFAF7",
+  "display": "standalone",
+  "start_url": "/"
+}
