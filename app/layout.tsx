@@ -38,6 +38,9 @@ export const metadata: Metadata = {
     ],
   },
   manifest: "/site.webmanifest",
+  verification: {
+    google: "2ARp9jMswdb7fcLYhaHoyksK-C4W_gdd7Qxn-4aeDWU",
+  },
 };
 
 export const viewport: Viewport = {
