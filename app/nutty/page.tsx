@@ -60,7 +60,7 @@ const roadmap = [
     phase: "Phase 02",
     status: "예정 / NEXT",
     title: "펫 영양제 라인업",
-    desc: "검사 결과에 따라 부족한 성분만 보충하는 맞춤 영양제. 사람의 '하루가꿈'과 동일한 구독 모델을 반려동물에게로.",
+    desc: "검사 결과에 따라 부족한 성분만 보충하는 맞춤 영양제. 반려동물 대상 구독 모델.",
     active: false,
   },
   {
@@ -99,7 +99,7 @@ export default function NuttyPage() {
                   className="w-1.5 h-1.5 rounded-full"
                   style={{ background: BRAND_COLOR }}
                 />
-                <span className="text-eyebrow text-navy">Brand 03 · 반려동물 펫푸드</span>
+                <span className="text-eyebrow text-navy">Brand 02 · 반려동물 펫푸드</span>
               </div>
 
               <h1 className="text-display text-5xl md:text-6xl lg:text-7xl text-navy leading-[0.95] mb-5 tracking-tight">
@@ -462,30 +462,6 @@ export default function NuttyPage() {
                 </div>
                 <p className="text-cream/70 text-sm">
                   너티 푸드의 시작점, 아이언펫 모발검사
-                </p>
-              </div>
-            </Link>
-
-            <Link
-              href="/balancelab"
-              className="group relative h-64 rounded-2xl overflow-hidden bg-primary-dark text-white p-10 flex flex-col justify-between"
-              style={{
-                background: `linear-gradient(165deg, #7B9EAEcc, var(--primary-dark) 60%)`,
-              }}
-            >
-              <div className="absolute -top-32 -right-32 w-80 h-80 rounded-full opacity-30 blur-3xl bg-[#7B9EAE]" />
-              <div className="relative flex items-center justify-between">
-                <span className="text-eyebrow text-cream/70">밸런스랩</span>
-                <span className="w-10 h-10 rounded-full border border-cream/20 flex items-center justify-center group-hover:bg-cream group-hover:text-navy group-hover:border-cream transition-all">
-                  <ArrowUpRight size={16} />
-                </span>
-              </div>
-              <div className="relative">
-                <div className="text-display text-3xl lg:text-4xl mb-2">
-                  사람을 위한 헬스케어
-                </div>
-                <p className="text-cream/70 text-sm">
-                  보호자의 균형도 함께 챙겨야 하니까
                 </p>
               </div>
             </Link>

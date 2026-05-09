@@ -48,10 +48,6 @@ export default function Home() {
                     title: "수직 통합형",
                     desc: "검사 → 분석 → 솔루션까지",
                   },
-                  {
-                    title: "듀얼 마켓",
-                    desc: "사람 + 반려동물 동시 공략",
-                  },
                 ].map((item) => (
                   <div
                     key={item.title}

@@ -22,37 +22,23 @@ export const siteConfig = {
       eyebrow: "AI 시대, 데이터의 생산자",
       headline: "검사가 솔루션이 되는\n헬스케어 데이터 기업",
       subheadline:
-        "PPMI는 20년 분석 기술을 기반으로 사람과 반려동물의 생체 데이터를 직접 생성하고 해석합니다.",
+        "PPMI는 20년 분석 기술을 기반으로 반려동물의 생체 데이터를 직접 생성하고 해석합니다.",
     },
     en: {
       eyebrow: "In the Age of AI, We Create the Data",
       headline: "Where Testing\nBecomes Solutions",
       subheadline:
-        "PPMI generates and interprets biological data for humans and pets, built on 20 years of analytical expertise.",
+        "PPMI generates and interprets biological data for pets, built on 20 years of analytical expertise.",
     },
   };
   
   export const stats = [
     { value: 20, suffix: "+", label: { ko: "년 분석 기술", en: "Years of Expertise" } },
     { value: 1, suffix: "", label: { ko: "국내 유일 국제공인시험기관", en: "KOLAS Certified" } },
-    { value: 3, suffix: "", label: { ko: "헬스케어 브랜드", en: "Healthcare Brands" } },
-    { value: 2, suffix: "", label: { ko: "사람 + 반려동물 시장", en: "Human + Pet Markets" } },
+    { value: 2, suffix: "", label: { ko: "헬스케어 브랜드", en: "Healthcare Brands" } },
   ];
   
   export const brands = [
-    {
-      id: "balancelab",
-      name: "Balance Lab",
-      nameKo: "밸런스랩",
-      tagline: { ko: "Find your balance", en: "Find your balance" },
-      description: {
-        ko: "내 몸의 균형을 찾는 가장 과학적인 헬스케어 솔루션. 정밀 검사부터 맞춤 영양제 구독까지.",
-        en: "The most scientific healthcare solution to find your body's balance. From precise testing to personalized nutrition subscription.",
-      },
-      market: { ko: "사람 헬스케어", en: "Human Healthcare" },
-      color: "#7B9EAE",
-      href: "/balancelab",
-    },
     {
       id: "ironpet",
       name: "IRONPET",
@@ -111,7 +97,6 @@ export const siteConfig = {
   export const navLinks = [
     { href: "/", label: { ko: "홈", en: "Home" } },
     { href: "/about", label: { ko: "회사소개", en: "About" } },
-    { href: "/balancelab", label: { ko: "밸런스랩", en: "Balance Lab" } },
     { href: "/ironpet", label: { ko: "아이언펫", en: "IRONPET" } },
     { href: "/nutty", label: { ko: "너티", en: "NUT:TY" } },
     { href: "/invest", label: { ko: "투자자", en: "Investors" } },

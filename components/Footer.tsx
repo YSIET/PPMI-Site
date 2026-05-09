@@ -21,13 +21,11 @@ export default function Footer() {
             </Link>
             <p className="text-sm leading-relaxed text-footer-text-soft max-w-md">
               {siteConfig.fullName}는 20년 분석 기술과 국내 유일 국제공인시험기관
-              인증을 기반으로 사람과 반려동물의 생체 데이터를 직접 생산하고 해석하는
+              인증을 기반으로 반려동물의 생체 데이터를 직접 생산하고 해석하는
               헬스케어 데이터 기업입니다.
             </p>
             <p className="text-xs text-footer-text-soft/80 mt-3 leading-relaxed">
               검사 · 데이터 · 솔루션
-              <br />
-              사람과 반려동물을 잇는 헬스케어 데이터 비즈니스
             </p>
           </div>
 

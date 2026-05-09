@@ -34,7 +34,7 @@ const reasons = [
     code: "W/01",
     title: "임팩트",
     titleEn: "Impact",
-    desc: "사람과 반려동물의 건강에 직접 기여합니다. 코드 한 줄, 분석 한 건이 누군가의 일상을 바꿉니다.",
+    desc: "반려동물의 건강에 직접 기여합니다. 코드 한 줄, 분석 한 건이 누군가의 일상을 바꿉니다.",
   },
   {
     icon: Rocket,
@@ -105,7 +105,7 @@ const positions = [
     titleEn: "Marketing Manager",
     department: "마케팅",
     type: "정규직",
-    desc: "B2C 브랜드(밸런스랩·아이언펫·너티) 마케팅 전략 수립과 채널 운영, 퍼포먼스 캠페인.",
+    desc: "B2C 브랜드(아이언펫·너티) 마케팅 전략 수립과 채널 운영, 퍼포먼스 캠페인.",
     icon: Megaphone,
   },
   {
@@ -131,7 +131,7 @@ const positions = [
 const benefits = [
   { icon: Calendar, label: "유연근무", desc: "코어타임 외 자율 운영" },
   { icon: GraduationCap, label: "학습 지원", desc: "도서·컨퍼런스·온라인 강의" },
-  { icon: ShieldCheck, label: "건강검진", desc: "밸런스랩 검사 무상 제공" },
+  { icon: ShieldCheck, label: "건강검진", desc: "아이언펫·너티 검사 무상 제공" },
   { icon: PawPrint, label: "펫 친화 사무실", desc: "반려동물 동반 출근 가능" },
   { icon: Coffee, label: "스낵·커피 바", desc: "사무실 내 무료 제공" },
   { icon: Award, label: "연구·학술 지원", desc: "논문·세미나 참여 비용" },

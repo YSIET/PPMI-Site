@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import {
-  ArrowRight,
   ArrowUpRight,
   PawPrint,
   Scissors,
@@ -116,7 +115,7 @@ export default function IronpetPage() {
                   className="w-1.5 h-1.5 rounded-full"
                   style={{ background: BRAND_COLOR }}
                 />
-                <span className="text-eyebrow text-navy">Brand 02 · 반려동물 헬스케어</span>
+                <span className="text-eyebrow text-navy">Brand 01 · 반려동물 헬스케어</span>
               </div>
 
               <h1 className="text-display text-5xl md:text-6xl lg:text-7xl text-navy leading-[0.95] mb-5 tracking-tight">
@@ -444,16 +443,6 @@ export default function IronpetPage() {
                   <ArrowUpRight
                     size={18}
                     className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"
-                  />
-                </Link>
-                <Link
-                  href="/balancelab"
-                  className="group inline-flex items-center gap-2 px-6 py-3.5 border-2 border-cream/40 text-cream rounded-full font-medium hover:border-cream hover:bg-cream/10 transition-all"
-                >
-                  밸런스랩
-                  <ArrowRight
-                    size={18}
-                    className="group-hover:translate-x-1 transition-transform"
                   />
                 </Link>
               </div>

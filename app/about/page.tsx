@@ -26,7 +26,7 @@ export default function AboutPage() {
             </h1>
             <p className="text-lg text-text-soft leading-relaxed max-w-2xl">
               PPMI는 20년 분석 기술과 국내 유일 국제공인시험기관 자격을 기반으로,
-              사람과 반려동물의 생체 데이터를 직접 생산하고 해석하는 헬스케어
+              반려동물의 생체 데이터를 직접 생산하고 해석하는 헬스케어
               데이터 기업입니다.
             </p>
           </motion.div>
@@ -59,10 +59,10 @@ export default function AboutPage() {
               <div className="border-t border-white/10 pt-8">
                 <div className="text-ppmi-red text-eyebrow mb-3">Vision</div>
                 <p className="text-lg md:text-xl text-white leading-snug font-display">
-                  사람과 반려동물의 모든 생체 데이터가 만나는 곳.
+                  반려동물의 모든 생체 데이터가 만나는 곳.
                 </p>
                 <p className="mt-2 text-white/60 italic text-sm">
-                  Where every biological signal — human and pet — comes together.
+                  Where pet biological signals come together.
                 </p>
               </div>
             </div>

@@ -19,12 +19,8 @@ export default function BrandShowcase() {
           <div className="text-eyebrow text-ppmi-red mb-3">Our Brands</div>
           <h2 className="text-display text-3xl md:text-4xl lg:text-5xl text-text mb-4">
             하나의 기술,{" "}
-            <span className="text-gradient">세 개의 브랜드</span>
+            <span className="text-gradient">두 개의 브랜드</span>
           </h2>
-          <p className="text-lg text-text-soft leading-relaxed">
-            동일한 분석 역량을 사람과 반려동물 양쪽 시장에 적용합니다. 검사 데이터를
-            기반으로 솔루션까지 이어지는 수직통합형 비즈니스 구조입니다.
-          </p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">

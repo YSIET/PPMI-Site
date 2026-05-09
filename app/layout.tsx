@@ -11,8 +11,6 @@ export const metadata: Metadata = {
     "PPMI",
     "피피엠아이",
     "헬스케어",
-    "밸런스랩",
-    "Balance Lab",
     "아이언펫",
     "IRONPET",
     "너티",

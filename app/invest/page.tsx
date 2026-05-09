@@ -7,7 +7,6 @@ import {
   Award,
   Beaker,
   Layers,
-  Users,
   Rocket,
   Globe,
   Database,
@@ -53,15 +52,8 @@ const advantages = [
     desc: "단기간 복제 불가능한 분석 노하우와 데이터베이스. 진입장벽이자 운영 자산입니다.",
   },
   {
-    icon: Users,
-    code: "M/03",
-    title: "사람 + 반려동물 듀얼 마켓",
-    titleEn: "Human + Pet Dual Market",
-    desc: "동일한 분석 기술을 두 시장에 동시 적용. 자본 효율성과 시장 다각화를 동시에.",
-  },
-  {
     icon: Layers,
-    code: "M/04",
+    code: "M/03",
     title: "검사 → 데이터 → 솔루션 수직통합",
     titleEn: "Vertical Integration",
     desc: "검사 매출 + 구독 매출 + 푸드 매출. 한 사용자가 여러 매출 라인에서 LTV를 만들어냅니다.",
@@ -84,7 +76,6 @@ const businessLines = [
     title: "구독 수익",
     titleEn: "Subscription Revenue",
     items: [
-      "하루가꿈 (사람 영양제 구독)",
       "검사 → 처방 자동 업데이트",
       "월 단위 LTV 누적",
     ],
@@ -104,8 +95,8 @@ const businessLines = [
 const growth = [
   {
     phase: "NOW",
-    title: "3개 브랜드 안착",
-    desc: "밸런스랩 · 아이언펫 · 너티 — 검사부터 솔루션까지 수직통합 구조의 시장 검증.",
+    title: "2개 브랜드 안착",
+    desc: "아이언펫 · 너티 — 검사부터 솔루션까지 수직통합 구조의 시장 검증.",
     color: "var(--gold)",
   },
   {
@@ -117,7 +108,7 @@ const growth = [
   {
     phase: "FUTURE",
     title: "헬스케어 데이터 플랫폼",
-    desc: "사람과 반려동물의 생체 데이터를 잇는 통합 플랫폼. AI 시대의 인프라 레이어.",
+    desc: "반려동물의 생체 데이터를 잇는 통합 플랫폼. AI 시대의 인프라 레이어.",
     color: "#D4794A",
   },
 ];
@@ -216,7 +207,7 @@ export default function InvestPage() {
             <h2 className="text-display text-3xl md:text-4xl lg:text-5xl text-navy leading-[1.05] mb-4">
               경쟁사가 따라올 수 없는
               <br />
-              네 가지 진입장벽
+              세 가지 진입장벽
             </h2>
             <p className="text-lg text-slate leading-relaxed">
               자본만으로는 만들 수 없는, 시간과 인증으로만 쌓이는 자산을 보유합니다.
