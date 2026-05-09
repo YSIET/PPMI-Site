@@ -1,7 +1,7 @@
 {
-  "name": "PPMI · 주식회사 피피엠아이",
+  "name": "PPMI · 펫 헬스케어 데이터 기업",
   "short_name": "PPMI",
-  "description": "데이터의 생산자, 헬스케어 데이터 기업",
+  "description": "KOLAS 인정 관계사의 분석 데이터를 기반으로 반려동물 헬스케어 솔루션을 만드는 펫 헬스케어 데이터 기업",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",

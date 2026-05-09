@@ -44,7 +44,7 @@ const features = [
     code: "F/04",
     title: "안전성",
     titleEn: "Safety",
-    desc: "원재료 단계부터 중금속·잔류물 검사. 국제공인시험기관의 자체 검증으로 끝까지 책임집니다.",
+    desc: "원재료 단계부터 중금속·잔류물 검사. KOLAS 인정 관계사 검증으로 끝까지 책임집니다.",
   },
 ];
 
@@ -463,6 +463,34 @@ export default function NuttyPage() {
                 <p className="text-cream/70 text-sm">
                   너티 푸드의 시작점, 아이언펫 모발검사
                 </p>
+              </div>
+            </Link>
+
+            <Link
+              href="/ironpet"
+              className="group relative h-64 rounded-2xl overflow-hidden bg-primary-dark text-white p-10 flex flex-col justify-between"
+              style={{
+                background: `linear-gradient(165deg, #D4794Acc, var(--primary-dark) 60%)`,
+              }}
+            >
+              <div className="absolute -top-32 -right-32 w-80 h-80 rounded-full opacity-30 blur-3xl bg-[#D4794A]" />
+              <div className="relative flex items-center justify-between">
+                <span className="text-eyebrow text-cream/70">Start with Precision Testing</span>
+                <span className="w-10 h-10 rounded-full border border-cream/20 flex items-center justify-center group-hover:bg-cream group-hover:text-navy group-hover:border-cream transition-all">
+                  <ArrowUpRight size={16} />
+                </span>
+              </div>
+              <div className="relative flex flex-col gap-3">
+                <div className="text-display text-3xl lg:text-4xl mb-1">
+                  정밀 검사로 시작하기
+                </div>
+                <p className="text-cream/70 text-sm leading-relaxed">
+                  우리 아이의 영양 상태가 궁금하다면, 모발 한 가닥으로 시작하는 아이언펫 정밀
+                  검사부터 만나보세요. 너티는 그 데이터에서 출발합니다.
+                </p>
+                <span className="inline-flex items-center gap-1 font-medium text-cream group-hover:translate-x-0.5 transition-transform">
+                  아이언펫 알아보기 →
+                </span>
               </div>
             </Link>
           </div>

@@ -98,9 +98,13 @@ export default function Hero() {
 
                 <div className="space-y-3.5">
                   {[
-                    { num: "01", label: "검사 / Test", sub: "정밀 생체 분석" },
-                    { num: "02", label: "데이터 / Data", sub: "직접 생산·해석" },
-                    { num: "03", label: "솔루션 / Solution", sub: "맞춤 영양·푸드" },
+                    {
+                      num: "01",
+                      label: "검사 / Test",
+                      sub: "시료 수집 (PPMI) → 분석 (관계사 KOLAS 시험기관)",
+                    },
+                    { num: "02", label: "데이터 / Data", sub: "PPMI가 생산·해석" },
+                    { num: "03", label: "솔루션 / Solution", sub: "아이언펫·너티" },
                   ].map((item, i) => (
                     <motion.div
                       key={item.num}
@@ -121,9 +125,11 @@ export default function Hero() {
                 </div>
 
                 <div className="mt-4 pt-3 border-t border-border text-xs leading-relaxed text-text-soft">
-                  국내 유일 국제공인시험기관
+                  KOLAS 인정 분석 파트너 (주)와이에스환경기술연구원 (인정번호 제364호)
                   <br />
-                  <span className="text-ppmi-red font-medium">KOLAS Certified Laboratory</span>
+                  <span className="text-ppmi-red font-medium">
+                    KOLAS-Accredited Partner — YS Institute of Environmental Technology (No. 364)
+                  </span>
                 </div>
               </div>
             </div>

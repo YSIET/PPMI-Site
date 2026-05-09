@@ -40,16 +40,16 @@ const advantages = [
   {
     icon: Award,
     code: "M/01",
-    title: "국내 유일 국제공인시험기관",
-    titleEn: "KOLAS Certified",
-    desc: "분석 스코프 기준 국내 유일. 정부 인증 분석력으로 데이터의 신뢰도를 보증합니다.",
+    title: "KOLAS 인정 분석 파트너십",
+    titleEn: "KOLAS-Accredited Partner",
+    desc: "관계사 (주)와이에스환경기술연구원(인정번호 제364호)의 KOLAS 인정 분석을 통해 모발·타액 기반 정밀 검사 데이터를 확보합니다.",
   },
   {
     icon: Beaker,
     code: "M/02",
-    title: "20년 분석 기술 축적",
-    titleEn: "20 Years of Expertise",
-    desc: "단기간 복제 불가능한 분석 노하우와 데이터베이스. 진입장벽이자 운영 자산입니다.",
+    title: "20년 분석 데이터 자산",
+    titleEn: "20 Years of Lab Data",
+    desc: "관계사가 20년간 축적한 KOLAS 인정 분석 데이터와 노하우를 PPMI가 펫 헬스케어 솔루션의 자산으로 활용합니다.",
   },
   {
     icon: Layers,
@@ -96,7 +96,7 @@ const growth = [
   {
     phase: "NOW",
     title: "2개 브랜드 안착",
-    desc: "아이언펫 · 너티 — 검사부터 솔루션까지 수직통합 구조의 시장 검증.",
+    desc: "아이언펫 · 너티 — KOLAS 인정 분석부터 솔루션까지 수직통합 구조의 시장 검증.",
     color: "var(--gold)",
   },
   {
@@ -107,7 +107,7 @@ const growth = [
   },
   {
     phase: "FUTURE",
-    title: "헬스케어 데이터 플랫폼",
+    title: "펫 헬스케어 데이터 플랫폼",
     desc: "반려동물의 생체 데이터를 잇는 통합 플랫폼. AI 시대의 인프라 레이어.",
     color: "#D4794A",
   },
@@ -136,8 +136,8 @@ export default function InvestPage() {
               <span className="text-gradient">Investor Relations</span>
             </h1>
             <p className="text-lg text-slate leading-relaxed max-w-3xl mb-4">
-              초기 스타트업의 역동성과 폭발적 성장 가능성. 검사·데이터·솔루션을 한 회사
-              안에서 완결하는, 한국 헬스케어의 새로운 카테고리를 만듭니다.
+              초기 스타트업의 역동성과 폭발적 성장 가능성. 검사·데이터·솔루션을 그룹
+              안에서 완결하는, 한국 펫 헬스케어의 새로운 카테고리를 만듭니다.
             </p>
             <p className="text-base text-slate-light italic">
               The dynamism of an early-stage startup, with the depth of a 20-year lab.
@@ -452,7 +452,7 @@ export default function InvestPage() {
               투자 문의
             </h2>
             <p className="text-lg text-cream/70 leading-relaxed">
-              초기 단계의 헬스케어 데이터 카테고리 리더와 함께할 파트너를 찾고 있습니다.
+              초기 단계의 펫 헬스케어 데이터 카테고리 리더와 함께할 파트너를 찾고 있습니다.
               아래 양식을 통해 연락 주시면, IR 자료와 함께 빠르게 회신드립니다.
             </p>
           </motion.div>

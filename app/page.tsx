@@ -37,16 +37,16 @@ export default function Home() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                 {[
                   {
-                    title: "20년 분석 기술",
-                    desc: "축적된 분석 노하우와 데이터베이스",
+                    title: "20년 분석 데이터 자산",
+                    desc: "관계사의 KOLAS 인정 분석 인프라에 20년간 축적된 데이터를 PPMI가 펫 헬스케어 자산으로 전환합니다.",
                   },
                   {
-                    title: "국제공인시험기관",
-                    desc: "국내 유일 KOLAS 인증 분석력",
+                    title: "KOLAS 인정 분석 파트너십",
+                    desc: "관계사 (주)와이에스환경기술연구원(인정번호 제364호)의 KOLAS 인정 분석력과 결합합니다.",
                   },
                   {
-                    title: "수직 통합형",
-                    desc: "검사 → 분석 → 솔루션까지",
+                    title: "데이터 수직 통합",
+                    desc: "분석(관계사) → 데이터 통합·해석(PPMI) → 솔루션(아이언펫·너티)까지, 한 그룹 안에서 완결되는 가치 사슬.",
                   },
                 ].map((item) => (
                   <div
@@ -96,8 +96,8 @@ export default function Home() {
                   <ArrowRight className="inline-block ml-3 group-hover:translate-x-2 transition-transform" />
                 </h3>
                 <p className="text-white/85 leading-relaxed">
-                  초기 스타트업의 역동성과 폭발적인 성장 가능성. 검사부터 솔루션까지,
-                  수직통합형 헬스케어 데이터 비즈니스를 만나보세요.
+                  초기 스타트업의 역동성과 폭발적인 성장 가능성. KOLAS 인정 분석부터 솔루션까지,
+                  그룹 수직통합형 펫 헬스케어 데이터 비즈니스를 만나보세요.
                 </p>
               </div>
             </Link>

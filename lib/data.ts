@@ -20,9 +20,9 @@ export const siteConfig = {
   export const heroContent = {
     ko: {
       eyebrow: "AI 시대, 데이터의 생산자",
-      headline: "검사가 솔루션이 되는\n헬스케어 데이터 기업",
+      headline: "검사가 솔루션이 되는 펫\n헬스케어 데이터 기업",
       subheadline:
-        "PPMI는 20년 분석 기술을 기반으로 반려동물의 생체 데이터를 직접 생성하고 해석합니다.",
+        "PPMI는 반려동물의 생체 데이터를 생산·해석하여 아이언펫과 너티로 잇는 펫 헬스케어 데이터 기업입니다. 정밀 분석은 KOLAS 인정 관계사 (주)와이에스환경기술연구원이 수행합니다.",
     },
     en: {
       eyebrow: "In the Age of AI, We Create the Data",
@@ -33,8 +33,16 @@ export const siteConfig = {
   };
   
   export const stats = [
-    { value: 20, suffix: "+", label: { ko: "년 분석 기술", en: "Years of Expertise" } },
-    { value: 1, suffix: "", label: { ko: "국내 유일 국제공인시험기관", en: "KOLAS Certified" } },
+    {
+      value: 20,
+      suffix: "+",
+      label: { ko: "20+ 년 분석 데이터 자산", en: "20+ Years of Lab Data Backing" },
+    },
+    {
+      value: 1,
+      suffix: "",
+      label: { ko: "1 KOLAS 인정 관계사", en: "KOLAS-Accredited Partner" },
+    },
     { value: 2, suffix: "", label: { ko: "헬스케어 브랜드", en: "Healthcare Brands" } },
   ];
   

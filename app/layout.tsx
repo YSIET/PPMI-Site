@@ -6,24 +6,28 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "PPMI · 데이터의 생산자 | 헬스케어 데이터 기업",
   description:
-    "PPMI는 20년 분석 기술을 기반으로 사람과 반려동물의 생체 데이터를 직접 생성하고 해석하는 헬스케어 데이터 기업입니다. 밸런스랩, 아이언펫, 너티 — 검사가 솔루션이 되는 곳.",
+    "PPMI는 KOLAS 인정 관계사의 정밀 분석 데이터를 통합·해석하여 반려동물 헬스케어 솔루션을 제공하는 펫 헬스케어 데이터 기업입니다. 아이언펫과 너티 — 검사가 솔루션이 되는 곳.",
   keywords: [
     "PPMI",
     "피피엠아이",
-    "헬스케어",
+    "펫 헬스케어",
+    "반려동물 모발검사",
     "아이언펫",
     "IRONPET",
     "너티",
     "NUT:TY",
-    "모발검사",
-    "반려동물 헬스케어",
-    "국제공인시험기관",
+    "펫푸드",
+    "반려동물 영양",
+    "KOLAS",
   ],
   openGraph: {
     title: "PPMI · 헬스케어 데이터 기업",
-    description: "검사가 솔루션이 되는, 사람과 반려동물의 데이터 기업",
+    description: "검사가 솔루션이 되는, 반려동물 헬스케어 데이터 기업",
     type: "website",
     locale: "ko_KR",
+  },
+  twitter: {
+    description: "검사가 솔루션이 되는, 반려동물 헬스케어 데이터 기업",
   },
   icons: {
     icon: [

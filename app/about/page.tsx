@@ -25,9 +25,7 @@ export default function AboutPage() {
               <span className="text-gradient">헬스케어를 다시 정의합니다</span>
             </h1>
             <p className="text-lg text-text-soft leading-relaxed max-w-2xl">
-              PPMI는 20년 분석 기술과 국내 유일 국제공인시험기관 자격을 기반으로,
-              반려동물의 생체 데이터를 직접 생산하고 해석하는 헬스케어
-              데이터 기업입니다.
+              PPMI는 KOLAS 인정 관계사의 분석력을 기반으로 반려동물의 생체 데이터를 생산·해석하는 펫 헬스케어 데이터 기업입니다.
             </p>
           </motion.div>
         </div>
@@ -50,10 +48,10 @@ export default function AboutPage() {
               <div>
                 <div className="text-ppmi-red text-eyebrow mb-3">Mission</div>
                 <p className="text-lg md:text-xl text-white leading-snug font-display">
-                  검사가 곧 솔루션이 되는 헬스케어 경험을 만든다.
+                  검사가 곧 솔루션이 되는 펫 헬스케어 경험을 만든다.
                 </p>
                 <p className="mt-2 text-white/60 italic text-sm">
-                  Make healthcare where testing itself becomes the solution.
+                  Make pet healthcare where testing itself becomes the solution.
                 </p>
               </div>
               <div className="border-t border-white/10 pt-8">
@@ -62,7 +60,7 @@ export default function AboutPage() {
                   반려동물의 모든 생체 데이터가 만나는 곳.
                 </p>
                 <p className="mt-2 text-white/60 italic text-sm">
-                  Where pet biological signals come together.
+                  Where every biological signal of pets comes together.
                 </p>
               </div>
             </div>
@@ -90,21 +88,21 @@ export default function AboutPage() {
             {[
               {
                 icon: Award,
-                title: "국내 유일 국제공인시험기관",
-                desc: "KOLAS 인증을 받은 분석력으로, 모발·타액 기반의 정밀 검사를 자체적으로 수행합니다.",
-                en: "KOLAS Certified — the only one in Korea for our analytical scope.",
+                title: "KOLAS 인정 분석 파트너십",
+                desc: "관계사 (주)와이에스환경기술연구원(인정번호 제364호)의 KOLAS 인정 분석을 통해 모발·타액 기반 정밀 검사 데이터를 확보합니다.",
+                en: "KOLAS-accredited testing through our partner, YS Institute of Environmental Technology.",
               },
               {
                 icon: Beaker,
-                title: "20년 축적된 분석 기술",
-                desc: "오랜 시간 쌓아온 분석 데이터베이스와 노하우는 단기간에 복제될 수 없는 자산입니다.",
-                en: "20 years of cumulative analytical know-how — irreplicable.",
+                title: "20년 분석 데이터 자산",
+                desc: "관계사가 20년간 축적한 KOLAS 인정 분석 데이터와 노하우를 PPMI가 펫 헬스케어 솔루션의 자산으로 활용합니다. 단기간에 복제될 수 없는 진입장벽입니다.",
+                en: "20 years of cumulative lab data — irreplicable.",
               },
               {
                 icon: TrendingUp,
-                title: "수직 통합형 비즈니스",
-                desc: "검사 → 데이터 분석 → 맞춤 솔루션까지, 한 회사 안에서 완결되는 가치 사슬.",
-                en: "End-to-end vertical integration: testing → data → solutions.",
+                title: "데이터 수직 통합",
+                desc: "관계사의 분석 → PPMI의 데이터 통합·해석 → 아이언펫·너티 솔루션까지, 한 그룹 안에서 완결되는 가치 사슬.",
+                en: "End-to-end vertical integration across the group: testing → data → solutions.",
               },
               {
                 icon: GraduationCap,
