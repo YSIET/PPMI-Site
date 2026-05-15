@@ -12,15 +12,12 @@ export default function Home() {
       {/* 회사 미션 섹션 */}
       <section className="pt-6 md:pt-8 pb-4 md:pb-5 bg-white relative">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-          <header className="max-w-4xl mb-5 md:mb-6">
-            <h2 className="text-display text-3xl md:text-4xl lg:text-5xl text-text leading-tight">
-              AI 시대,{" "}
-              <span className="text-gradient">데이터의 생산자</span>
-              가 되는 것
+          <header className="mb-4 md:mb-5">
+            <h2 className="text-display text-3xl md:text-4xl lg:text-5xl text-text leading-tight lg:whitespace-nowrap">
+              <span className="text-gradient">AI시대의 데이터 생산자</span>
             </h2>
-            <p className="mt-2 text-lg text-text leading-snug">
-              AI는 결국 데이터의 게임입니다. PPMI는 단순히 AI를 활용하는 회사가
-              아니라,{" "}
+            <p className="mt-2 w-full text-sm sm:text-base lg:text-[0.9375rem] xl:text-lg text-text leading-snug 2xl:whitespace-nowrap">
+              AI는 결국 데이터의 게임입니다. PPMI는 단순히 AI를 활용하는 회사가 아니라,{" "}
               <span className="text-ppmi-red font-semibold">
                 반려동물 생체 데이터를 통합·해석해 브랜드와 서비스로 잇는
               </span>{" "}
