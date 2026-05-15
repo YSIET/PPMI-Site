@@ -94,7 +94,7 @@ export const siteConfig = {
       name: "엄유진",
       role: { ko: "최고기술책임자 / CTO", en: "CTO" },
       credentials: {
-        ko: "연세대학교 화공생명공학과 박사\n(주)와이에스환경기술연구원 대표",
+        ko: "한림대학교 학사\n한림대학교 석사\n연세대학교 화공생명공학과 박사\n(주)와이에스환경기술연구원 대표",
         en: "Ph.D., Chemical & Biological Engineering, Yonsei · CEO, YS Institute of Environmental Technology",
       },
     },
@@ -102,7 +102,7 @@ export const siteConfig = {
       name: "김승현",
       role: { ko: "최고재무책임자 / CFO", en: "CFO" },
       credentials: {
-        ko: "서울대\nYale MBA\nBCG Consultant\nCredit Suisse Analyst 출신",
+        ko: "서울대\nYale MBA\nBCG Consultant\nCredit Suisse Analyst",
         en: "Seoul National University · Yale MBA · BCG · Credit Suisse Analyst",
       },
     },
