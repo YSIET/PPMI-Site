@@ -17,6 +17,9 @@ import {
 
 const BRAND_COLOR = "#C9A84C";
 
+const NUTTY_STORE = "https://www.ironpet.store/";
+const NAVER_SMARTSTORE = "https://smartstore.naver.com/ppmi";
+
 const features = [
   {
     icon: Heart,
@@ -116,6 +119,36 @@ export default function NuttyPage() {
                 인사이트를 바탕으로, 더 정밀한 식이 설계를 지향하는 PPMI의 데이터 기반
                 펫푸드 브랜드입니다.
               </p>
+
+              <p className="text-sm text-slate-light mt-4 max-w-2xl leading-relaxed">
+                너티 제품 확인과 구매는 공식 판매 채널에서 진행됩니다.
+              </p>
+              <div className="flex flex-wrap gap-3 mt-5">
+                <a
+                  href={NUTTY_STORE}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-flex items-center gap-2 px-6 py-3.5 bg-navy text-cream rounded-full font-medium hover:bg-primary-dark transition-colors"
+                >
+                  너티 제품 보러가기
+                  <ArrowUpRight
+                    size={18}
+                    className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"
+                  />
+                </a>
+                <a
+                  href={NAVER_SMARTSTORE}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-flex items-center gap-2 px-6 py-3.5 border-2 border-navy/20 text-navy rounded-full font-medium hover:border-navy hover:bg-navy hover:text-cream transition-all"
+                >
+                  네이버 스마트스토어에서 보기
+                  <ArrowUpRight
+                    size={18}
+                    className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"
+                  />
+                </a>
+              </div>
             </div>
 
             <motion.div
@@ -443,61 +476,47 @@ export default function NuttyPage() {
         </div>
       </section>
 
-      {/* CTA */}
+      {/* 공식 판매 채널 */}
       <section className="py-16 md:py-20 bg-cream-warm">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Link
-              href="/ironpet"
-              className="group relative h-64 rounded-2xl overflow-hidden bg-primary-dark text-white p-10 flex flex-col justify-between"
-              style={{
-                background: `linear-gradient(165deg, #D4794Acc, var(--primary-dark) 60%)`,
-              }}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="max-w-3xl mb-8"
+          >
+            <h2 className="text-display text-3xl md:text-4xl lg:text-5xl text-navy leading-[1.05] mb-4">
+              너티 공식 판매 채널에서 확인하세요
+            </h2>
+            <p className="text-lg text-slate leading-relaxed">
+              너티 제품 정보와 구매는 공식 판매 채널에서 확인하실 수 있습니다. 검사 흐름과
+              데이터 연결은{" "}
+              <Link href="/ironpet" className="text-ppmi-red font-medium hover:underline underline-offset-4">
+                아이언펫 소개
+              </Link>
+              에서 이어집니다.
+            </p>
+          </motion.div>
+          <div className="flex flex-wrap gap-3">
+            <a
+              href={NUTTY_STORE}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-2 px-5 py-3 bg-navy text-cream rounded-full text-sm font-medium hover:bg-primary-dark transition-colors"
             >
-              <div className="absolute -top-32 -right-32 w-80 h-80 rounded-full opacity-30 blur-3xl bg-[#D4794A]" />
-              <div className="relative flex items-center justify-between">
-                <span className="text-eyebrow text-cream/70">아이언펫</span>
-                <span className="w-10 h-10 rounded-full border border-cream/20 flex items-center justify-center group-hover:bg-cream group-hover:text-navy group-hover:border-cream transition-all">
-                  <ArrowUpRight size={16} />
-                </span>
-              </div>
-              <div className="relative">
-                <div className="text-display text-3xl lg:text-4xl mb-2">
-                  검사로 시작하기
-                </div>
-                <p className="text-cream/70 text-sm">
-                  너티 푸드의 시작점, 아이언펫 모발검사
-                </p>
-              </div>
-            </Link>
-
-            <Link
-              href="/ironpet"
-              className="group relative h-64 rounded-2xl overflow-hidden bg-primary-dark text-white p-10 flex flex-col justify-between"
-              style={{
-                background: `linear-gradient(165deg, #D4794Acc, var(--primary-dark) 60%)`,
-              }}
+              너티 제품 보러가기
+              <ArrowUpRight size={16} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+            </a>
+            <a
+              href={NAVER_SMARTSTORE}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-2 px-5 py-3 border-2 border-navy/20 text-navy rounded-full text-sm font-medium hover:border-navy hover:bg-navy hover:text-cream transition-colors"
             >
-              <div className="absolute -top-32 -right-32 w-80 h-80 rounded-full opacity-30 blur-3xl bg-[#D4794A]" />
-              <div className="relative flex items-center justify-between">
-                <span className="text-eyebrow text-cream/70">Start with Precision Testing</span>
-                <span className="w-10 h-10 rounded-full border border-cream/20 flex items-center justify-center group-hover:bg-cream group-hover:text-navy group-hover:border-cream transition-all">
-                  <ArrowUpRight size={16} />
-                </span>
-              </div>
-              <div className="relative flex flex-col gap-3">
-                <div className="text-display text-3xl lg:text-4xl mb-1">
-                  정밀 검사로 시작하기
-                </div>
-                <p className="text-cream/70 text-sm leading-relaxed">
-                  우리 아이의 영양 상태가 궁금하다면, 모발 한 가닥으로 시작하는 아이언펫 정밀
-                  검사부터 만나보세요. 너티는 그 데이터에서 출발합니다.
-                </p>
-                <span className="inline-flex items-center gap-1 font-medium text-cream group-hover:translate-x-0.5 transition-transform">
-                  아이언펫 알아보기 →
-                </span>
-              </div>
-            </Link>
+              네이버 스마트스토어에서 보기
+              <ArrowUpRight size={16} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+            </a>
           </div>
         </div>
       </section>

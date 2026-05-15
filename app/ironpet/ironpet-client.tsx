@@ -18,6 +18,9 @@ import {
 
 const BRAND_COLOR = "#D4794A";
 
+const IRONPET_DASHBOARD = "https://ironpet.kr/dashboard";
+const IRONPET_STORE = "https://www.ironpet.store/";
+
 const painPoints = [
   {
     icon: Stethoscope,
@@ -130,6 +133,36 @@ export default function IronpetPage() {
                 말 못 하는 아이의 몸이 보내는 신호를, 데이터로 먼저 듣습니다.
                 병원에 가지 않아도, 집에서 모발 한 가닥이면 충분합니다.
               </p>
+
+              <p className="text-sm text-slate-light mt-4 max-w-2xl leading-relaxed">
+                검사 신청과 제품 확인은 아이언펫 공식 채널에서 진행됩니다.
+              </p>
+              <div className="flex flex-wrap gap-3 mt-5">
+                <a
+                  href={IRONPET_DASHBOARD}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-flex items-center gap-2 px-6 py-3.5 bg-ppmi-red text-white rounded-full font-medium hover:bg-ppmi-red-dark transition-colors shadow-md shadow-ppmi-red/15"
+                >
+                  아이언펫 검사 시작하기
+                  <ArrowUpRight
+                    size={18}
+                    className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"
+                  />
+                </a>
+                <a
+                  href={IRONPET_STORE}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-flex items-center gap-2 px-6 py-3.5 border-2 border-navy/20 text-navy rounded-full font-medium hover:border-navy hover:bg-navy hover:text-cream transition-all"
+                >
+                  아이언펫 스토어 보기
+                  <ArrowUpRight
+                    size={18}
+                    className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"
+                  />
+                </a>
+              </div>
             </div>
 
             <motion.div
@@ -422,29 +455,40 @@ export default function IronpetPage() {
           >
             <div className="absolute inset-0 bg-noise opacity-30" />
             <div className="relative grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-              <div className="lg:col-span-8">
-                <div className="text-eyebrow text-cream/70 mb-4">What's Next</div>
-                <h2 className="text-display text-3xl md:text-4xl lg:text-5xl leading-[1.1] mb-4">
-                  검사 데이터가
-                  <br />
-                  맞춤 펫푸드로 이어집니다
-                </h2>
-                <p className="text-cream/85 leading-relaxed max-w-xl">
-                  아이언펫에서 측정한 영양 데이터는 자매 브랜드 너티(NUT:TY)의 푸드 설계로
-                  연결됩니다.
-                </p>
-              </div>
-              <div className="lg:col-span-4 flex flex-wrap gap-3 lg:justify-end">
-                <Link
-                  href="/nutty"
-                  className="group inline-flex items-center gap-2 px-6 py-3.5 bg-cream text-navy rounded-full font-medium hover:bg-gold transition-all"
-                >
-                  너티 보기
-                  <ArrowUpRight
-                    size={18}
-                    className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"
-                  />
-                </Link>
+              <div className="lg:col-span-8 space-y-5">
+                <div>
+                  <h2 className="text-display text-3xl md:text-4xl lg:text-5xl leading-[1.1] mb-3">
+                    아이언펫 공식 채널에서 시작하세요
+                  </h2>
+                  <p className="text-cream/85 leading-relaxed max-w-xl">
+                    아이언펫 검사 신청과 관련 제품 확인은 공식 채널에서 진행됩니다. 검사
+                    데이터가 펫푸드 설계로 이어지는 이야기는 PPMI 사이트의{" "}
+                    <Link href="/nutty" className="text-gold hover:text-gold-light underline-offset-4 hover:underline font-medium">
+                      너티
+                    </Link>
+                    페이지에서도 이어집니다.
+                  </p>
+                </div>
+                <div className="flex flex-wrap gap-3">
+                  <a
+                    href={IRONPET_DASHBOARD}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group inline-flex items-center gap-2 px-5 py-3 bg-cream text-navy rounded-full text-sm font-medium hover:bg-gold transition-colors"
+                  >
+                    아이언펫 검사 시작하기
+                    <ArrowUpRight size={16} className="opacity-80 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                  </a>
+                  <a
+                    href={IRONPET_STORE}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group inline-flex items-center gap-2 px-5 py-3 border border-cream/40 text-cream rounded-full text-sm font-medium hover:bg-cream/10 transition-colors"
+                  >
+                    아이언펫 스토어 보기
+                    <ArrowUpRight size={16} className="opacity-80 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                  </a>
+                </div>
               </div>
             </div>
           </motion.div>
