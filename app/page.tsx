@@ -12,7 +12,7 @@ export default function Home() {
       <BrandShowcase />
 
       {/* 회사 미션 섹션 */}
-      <section className="py-12 md:py-16 bg-white relative">
+      <section className="pt-12 md:pt-16 pb-6 md:pb-8 bg-white relative">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
             <div className="lg:col-span-5">

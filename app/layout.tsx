@@ -65,7 +65,7 @@ export default function RootLayout({
     <html lang="ko">
       <body className="antialiased">
         <Nav />
-        <main className="min-h-screen">{children}</main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>
