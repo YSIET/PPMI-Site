@@ -103,7 +103,7 @@ export default function Hero() {
                       label: "검사 / Test",
                       sub: "시료 수집 (PPMI) → 분석 (관계사 KOLAS 시험기관)",
                     },
-                    { num: "02", label: "데이터 / Data", sub: "PPMI가 생산·해석" },
+                    { num: "02", label: "데이터 / Data", sub: "측정 결과를 PPMI가 통합·해석" },
                     { num: "03", label: "솔루션 / Solution", sub: "아이언펫·너티" },
                   ].map((item, i) => (
                     <motion.div

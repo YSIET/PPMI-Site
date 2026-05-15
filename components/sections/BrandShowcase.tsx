@@ -23,7 +23,7 @@ export default function BrandShowcase() {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
           {brands.map((brand, i) => (
             <motion.div
               key={brand.id}

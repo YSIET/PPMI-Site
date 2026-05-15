@@ -87,7 +87,7 @@ const positions = [
     titleEn: "Analytical Scientist",
     department: "R&D",
     type: "정규직",
-    desc: "모발·타액 기반 정밀 분석 프로토콜 설계와 운영. 신규 검사 항목 개발과 기존 라인 고도화.",
+    desc: "반려동물 모발 등 시료 기반 정밀 분석 프로토콜 설계와 운영. 신규 검사 항목 개발과 기존 라인 고도화.",
     icon: Beaker,
   },
   {

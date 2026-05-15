@@ -22,13 +22,13 @@ export const siteConfig = {
       eyebrow: "AI 시대, 데이터의 생산자",
       headline: "검사가 솔루션이 되는 펫\n헬스케어 데이터 기업",
       subheadline:
-        "PPMI는 반려동물의 생체 데이터를 생산·해석하여 아이언펫과 너티로 잇는 펫 헬스케어 데이터 기업입니다. 정밀 분석은 KOLAS 인정 관계사 (주)와이에스환경기술연구원이 수행합니다.",
+        "PPMI는 반려동물 생체 데이터를 통합·해석하여 아이언펫과 너티로 잇는 펫 헬스케어 데이터 기업입니다. 정밀 분석은 KOLAS 인정 관계사 (주)와이에스환경기술연구원이 수행합니다.",
     },
     en: {
       eyebrow: "In the Age of AI, We Create the Data",
       headline: "Where Testing\nBecomes Solutions",
       subheadline:
-        "PPMI generates and interprets biological data for pets, built on 20 years of analytical expertise.",
+        "PPMI unifies and interprets pet health data for IRONPET and NUT:TY—built on 20 years of analytical partnership with our KOLAS-accredited affiliate lab.",
     },
   };
   

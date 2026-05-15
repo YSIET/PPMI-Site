@@ -25,7 +25,7 @@ export default function AboutPage() {
               <span className="text-gradient">헬스케어를 다시 정의합니다</span>
             </h1>
             <p className="text-lg text-text-soft leading-relaxed max-w-2xl">
-              PPMI는 KOLAS 인정 관계사의 분석력을 기반으로 반려동물의 생체 데이터를 생산·해석하는 펫 헬스케어 데이터 기업입니다.
+              PPMI는 KOLAS 인정 관계사의 분석력을 기반으로 반려동물 생체 데이터를 통합·해석하는 펫 헬스케어 데이터 기업입니다.
             </p>
           </motion.div>
         </div>
@@ -89,7 +89,7 @@ export default function AboutPage() {
               {
                 icon: Award,
                 title: "KOLAS 인정 분석 파트너십",
-                desc: "관계사 (주)와이에스환경기술연구원(인정번호 제364호)의 KOLAS 인정 분석을 통해 모발·타액 기반 정밀 검사 데이터를 확보합니다.",
+                desc: "관계사 (주)와이에스환경기술연구원(인정번호 제364호)의 KOLAS 인정 분석을 통해 반려동물 모발 등 시료 기반 정밀 검사 데이터를 확보합니다.",
                 en: "KOLAS-accredited testing through our partner, YS Institute of Environmental Technology.",
               },
               {

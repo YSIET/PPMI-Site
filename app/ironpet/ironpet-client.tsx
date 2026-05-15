@@ -48,7 +48,7 @@ const process = [
     num: "02",
     title: "정밀 분석",
     titleEn: "Lab Analysis",
-    desc: "국제공인시험기관 PPMI 분석실에서 수십 가지 지표를 측정합니다.",
+    desc: "KOLAS 인정 관계사 (주)와이에스환경기술연구원에서 수십 가지 지표를 측정합니다.",
     icon: FlaskConical,
   },
   {
@@ -270,8 +270,8 @@ export default function IronpetPage() {
               <span style={{ color: BRAND_COLOR }}>비대면 · 저비용</span> 사전 관리
             </h2>
             <p className="text-lg text-slate leading-relaxed">
-              집에서 보호자가 직접 채취한 모발 한 가닥. PPMI의 분석 기술이 그 안에 담긴
-              영양 균형, 중금속 노출, 스트레스 신호를 데이터로 풀어냅니다.
+              집에서 보호자가 직접 채취한 모발 한 가닥. 관계사 시험기관의 측정 결과를 바탕으로
+              PPMI가 그 안에 담긴 영양 균형, 중금속 노출, 스트레스 신호를 데이터로 풀어냅니다.
             </p>
           </motion.div>
 

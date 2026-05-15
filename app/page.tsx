@@ -30,9 +30,9 @@ export default function Home() {
                 AI는 결국 데이터의 게임입니다. PPMI는 단순히 AI를 활용하는 회사가
                 아닌,{" "}
                 <span className="text-ppmi-red font-semibold">
-                  자체적으로 생체 데이터를 직접 생성하고 해석하는
+                  반려동물 생체 데이터를 통합·해석해 브랜드와 서비스로 잇는
                 </span>{" "}
-                헬스케어 데이터 기업입니다.
+                펫 헬스케어 데이터 기업입니다.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                 {[
