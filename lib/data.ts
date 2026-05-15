@@ -66,8 +66,8 @@ export const siteConfig = {
       nameKo: "너티",
       tagline: { ko: "건강한 한 입, 맛있는 습관", en: "Healthy Bite, Tasty Habit" },
       description: {
-        ko: "아이언펫의 반려동물 건강 데이터를 기반으로 영양부터 꼼꼼하게 설계한 펫푸드 브랜드.",
-        en: "A pet food brand designed with nutritional precision, based on IRONPET's pet health data.",
+        ko: "아이언펫 검사 흐름에서 확인되는 반려동물 영양 상태와 생체 데이터 인사이트를 바탕으로, 더 정밀한 식이 설계를 지향하는 PPMI의 데이터 기반 펫푸드 브랜드.",
+        en: "PPMI's data-informed pet food brand, shaping diet design from nutrition and biological insights tied to the IRONPET testing flow.",
       },
       market: { ko: "반려동물 펫푸드", en: "Pet Food" },
       color: "#C9A84C",

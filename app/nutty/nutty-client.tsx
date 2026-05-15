@@ -112,8 +112,9 @@ export default function NuttyPage() {
               </p>
 
               <p className="text-lg md:text-xl text-slate leading-relaxed max-w-2xl">
-                평범한 펫푸드가 아닙니다. 아이언펫이 아이의 몸에서 직접 읽어낸 데이터를
-                기반으로, 영양부터 꼼꼼하게 설계한 데이터-드리븐 펫푸드 브랜드입니다.
+                너티는 아이언펫 검사 흐름에서 확인되는 반려동물의 영양 상태와 생체 데이터
+                인사이트를 바탕으로, 더 정밀한 식이 설계를 지향하는 PPMI의 데이터 기반
+                펫푸드 브랜드입니다.
               </p>
             </div>
 
@@ -135,10 +136,10 @@ export default function NuttyPage() {
                   <Apple size={48} className="opacity-90" />
                   <div>
                     <div className="text-eyebrow text-navy/70 mb-3">Pet Food</div>
-                    <div className="text-display text-3xl mb-2 leading-tight">
-                      데이터로 시작하는
+                    <div className="text-display text-2xl md:text-3xl mb-2 leading-tight">
+                      아이언펫 데이터에서 출발한
                       <br />
-                      한 끼
+                      펫푸드, 너티
                     </div>
                   </div>
                 </div>
@@ -175,7 +176,7 @@ export default function NuttyPage() {
                 icon: Database,
                 tag: "Step 01",
                 title: "아이언펫 모발검사",
-                desc: "비타민·미네랄·중금속·스트레스 지표를 측정해 아이의 영양 상태를 데이터로 변환합니다.",
+                desc: "아이언펫 모발검사에서 확인된 비타민·미네랄·중금속·스트레스 지표 등을 바탕으로 아이의 영양 상태를 데이터로 정리합니다.",
               },
               {
                 icon: Sparkles,
@@ -227,8 +228,8 @@ export default function NuttyPage() {
             className="mt-12 text-center"
           >
             <p className="text-cream/50 text-sm italic max-w-2xl mx-auto leading-relaxed">
-              IRONPET measures it. NUT:TY designs it. — From hair to habit, in one
-              vertically-integrated loop.
+              IRONPET insights, NUT:TY recipes — testing signals and diet design in one
+              connected flow from sample to bowl.
             </p>
           </motion.div>
         </div>
@@ -385,15 +386,17 @@ export default function NuttyPage() {
           >
             <div className="lg:col-span-7">
               <div className="text-eyebrow text-ppmi-red mb-4">Why NUT:TY</div>
+              <p className="text-eyebrow text-cream/70 mb-2 tracking-wide">
+                Data-Informed Pet Food Design
+              </p>
               <h2 className="text-display text-3xl md:text-4xl lg:text-5xl text-cream leading-[1.05] mb-4">
-                검사 데이터 기반 푸드는
-                <br />
-                <span className="text-gradient">너티가 유일합니다.</span>
+                검사 데이터에서 출발하는 펫푸드
               </h2>
               <p className="text-lg text-cream/75 leading-relaxed max-w-2xl mb-5">
-                다른 펫푸드 브랜드는 일반적인 영양 가이드라인에 맞춰 만들어집니다. 너티는
-                실제 한국 반려동물의 모발 데이터에서 도출된 결핍 패턴을 기반으로
-                설계됩니다. 데이터 기업이 만든 펫푸드 — 시장에서 단 하나입니다.
+                너티는 아이언펫 검사 흐름에서 확인되는 반려동물의 영양 상태와 생체 데이터
+                인사이트를 바탕으로, 더 정밀한 식이 설계를 지향하는 PPMI의 데이터 기반
+                펫푸드 브랜드입니다. 일반적인 영양 가이드라인만 따르는 사료와 달리, 검사
+                과정에서 정리·통합된 신호를 레시피 방향의 출발점으로 삼습니다.
               </p>
               <Link
                 href="/ironpet"
@@ -422,13 +425,15 @@ export default function NuttyPage() {
                 <div className="relative h-full flex flex-col justify-between text-cream">
                   <Star size={40} className="opacity-80" />
                   <div>
-                    <div className="text-display text-5xl md:text-6xl lg:text-8xl mb-2">1</div>
-                    <div className="text-eyebrow text-cream/70">
-                      Only Data-Driven Pet Food in Korea
+                    <div className="text-eyebrow text-cream/70 mb-3">
+                      Data-Informed Pet Food Design
                     </div>
-                    <p className="text-cream/85 mt-4 text-sm leading-relaxed">
-                      검사 데이터가 곧 레시피의 뿌리. PPMI의 수직통합 구조에서만
-                      가능한 카테고리입니다.
+                    <p className="text-display text-2xl md:text-3xl font-display mb-4 leading-snug">
+                      아이언펫 검사 흐름과 연결되는 데이터 기반 펫푸드
+                    </p>
+                    <p className="text-cream/85 text-sm leading-relaxed">
+                      검사에서 정리된 영양·생체 신호가 식이 설계로 이어지도록, 아이언펫과
+                      너티가 한 데이터 루프 안에서 맞물려 돌아갑니다.
                     </p>
                   </div>
                 </div>
