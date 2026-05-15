@@ -84,27 +84,27 @@ export const siteConfig = {
   export const team = [
     {
       name: "이태규",
-      nameEn: "Tae-Kyu Lee",
       role: { ko: "대표이사 / CEO", en: "CEO" },
-      credentials: { ko: "MIT 석사 · 공학박사 · 연세대 교수", en: "MIT M.S. · Ph.D. · Professor, Yonsei University" },
-    },
-    {
-      name: "김승현",
-      nameEn: "Seung-Hyun Kim",
-      role: { ko: "최고재무책임자 / CFO", en: "CFO" },
-      credentials: { ko: "Yale MBA · BCG 출신", en: "Yale MBA · Ex-BCG" },
+      credentials: {
+        ko: "연세대학교\nMIT 석사\nUniversity of Cincinnati 박사\n연세대학교 화공생명공학과 교수",
+        en: "Yonsei University · MIT M.S. · University of Cincinnati Ph.D. · Professor, Chemical Engineering, Yonsei",
+      },
     },
     {
       name: "엄유진",
-      nameEn: "Yu-Jin Eom",
       role: { ko: "최고기술책임자 / CTO", en: "CTO" },
-      credentials: { ko: "연세대 박사 · 분석기술 전문", en: "Ph.D., Yonsei University · Analytical Expert" },
+      credentials: {
+        ko: "연세대학교 화공생명공학과 박사\n(주)와이에스환경기술연구원 대표",
+        en: "Ph.D., Chemical & Biological Engineering, Yonsei · CEO, YS Institute of Environmental Technology",
+      },
     },
     {
-      name: "조영광",
-      nameEn: "Young-Kwang Cho",
-      role: { ko: "수의 책임자 / CVO", en: "Chief Veterinary Officer" },
-      credentials: { ko: "수의사 · 반려동물 건강 전문", en: "DVM · Pet Health Specialist" },
+      name: "김승현",
+      role: { ko: "최고재무책임자 / CFO", en: "CFO" },
+      credentials: {
+        ko: "서울대\nYale MBA\nBCG Consultant\nCredit Suisse Analyst 출신",
+        en: "Seoul National University · Yale MBA · BCG · Credit Suisse Analyst",
+      },
     },
   ];
   

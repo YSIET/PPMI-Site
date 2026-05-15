@@ -134,26 +134,10 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 팀 */}
-      <section className="py-10 md:py-12 bg-background">
+      {/* Leadership */}
+      <section className="py-8 md:py-10 bg-background">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="mb-6 max-w-3xl"
-          >
-            <div className="text-eyebrow text-ppmi-red mb-3">Leadership</div>
-            <h2 className="text-display text-3xl md:text-4xl lg:text-5xl text-text mb-3">
-              세계적 학문, 국내 최고의 비즈니스
-            </h2>
-            <p className="text-lg text-text-soft leading-snug">
-              MIT, Yale, 연세대 — 학문과 비즈니스 양쪽에서 검증된 팀이 PPMI를 이끕니다.
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5 items-stretch">
             {team.map((member, i) => (
               <motion.div
                 key={member.name}
@@ -161,28 +145,22 @@ export default function AboutPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.5, delay: i * 0.08 }}
-                className="group p-5 rounded-2xl bg-white border border-border hover:border-ppmi-red/30 hover:shadow-lg hover:shadow-ppmi-red/5 transition-all"
+                className="group flex flex-col h-full p-4 md:p-5 rounded-2xl bg-white border border-border hover:border-ppmi-red/30 hover:shadow-lg hover:shadow-ppmi-red/5 transition-all"
                 style={{ borderTopColor: "var(--ppmi-red)", borderTopWidth: "3px" }}
               >
-                <div className="text-eyebrow text-ppmi-red mb-3">0{i + 1}</div>
-                <div className="text-text-soft text-sm tracking-wider mb-1">
+                <div className="text-eyebrow text-ppmi-red mb-2">
+                  {String(i + 1).padStart(2, "0")}
+                </div>
+                <div className="text-text-soft text-sm tracking-wide mb-3">
                   {member.role.ko}
                 </div>
-                <div className="text-text-light text-xs tracking-wider uppercase mb-4">
-                  {member.role.en}
+                <div className="text-display text-2xl text-text mb-3">
+                  {member.name}
                 </div>
-                <div>
-                  <div className="text-display text-2xl text-text mb-1">
-                    {member.name}
-                  </div>
-                  <div className="text-text-light text-sm mb-4 italic">
-                    {member.nameEn}
-                  </div>
-                  <div className="pt-3 border-t border-border">
-                    <p className="text-text-soft text-xs leading-snug">
-                      {member.credentials.ko}
-                    </p>
-                  </div>
+                <div className="mt-auto pt-3 border-t border-border">
+                  <p className="text-text-soft text-xs leading-snug whitespace-pre-line">
+                    {member.credentials.ko}
+                  </p>
                 </div>
               </motion.div>
             ))}
