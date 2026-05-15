@@ -4,6 +4,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.ppmi.kr"),
   title: "PPMI · 데이터의 생산자 | 헬스케어 데이터 기업",
   description:
     "PPMI는 KOLAS 인정 관계사의 정밀 분석 데이터를 통합·해석하여 반려동물 헬스케어 솔루션을 제공하는 펫 헬스케어 데이터 기업입니다. 아이언펫과 너티 — 검사가 솔루션이 되는 곳.",
@@ -20,6 +21,9 @@ export const metadata: Metadata = {
     "반려동물 영양",
     "KOLAS",
   ],
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "PPMI · 헬스케어 데이터 기업",
     description: "검사가 솔루션이 되는, 반려동물 헬스케어 데이터 기업",
