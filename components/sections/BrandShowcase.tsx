@@ -7,16 +7,16 @@ import { brands } from "@/lib/data";
 
 export default function BrandShowcase() {
   return (
-    <section className="pt-4 pb-7 md:pt-5 md:pb-9 bg-background relative">
+    <section className="pt-2 pb-7 md:pt-3 md:pb-9 bg-background relative">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="max-w-3xl mb-4 md:mb-5"
+          className="max-w-3xl mb-2 md:mb-3"
         >
-          <div className="text-eyebrow text-ppmi-red mb-2">Our Brands</div>
+          <div className="text-eyebrow text-ppmi-red mb-1.5">Our Brands</div>
           <h2 className="text-display text-3xl md:text-4xl lg:text-5xl text-text mb-0">
             하나의 기술,{" "}
             <span className="text-gradient">두 개의 브랜드</span>
