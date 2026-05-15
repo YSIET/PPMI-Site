@@ -101,13 +101,7 @@ export default function AboutPage() {
                 {
                   icon: Beaker,
                   title: "20년 분석 데이터 자산",
-                  desc: (
-                    <>
-                      관계사가 20년간 축적한 KOLAS 인정 분석 데이터와 노하우를 PPMI가 펫 헬스케어 솔루션의 자산으로 활용합니다.
-                      <br />
-                      단기간에 복제될 수 없는 진입장벽입니다.
-                    </>
-                  ),
+                  desc: "관계사가 20년간 축적한 KOLAS 인정 분석 데이터와 노하우를 PPMI가 펫 헬스케어 솔루션의 자산으로 활용합니다. 단기간에 복제될 수 없는 진입장벽입니다.",
                   en: "20 years of cumulative lab data — irreplicable.",
                 },
                 {
