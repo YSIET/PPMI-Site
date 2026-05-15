@@ -83,7 +83,7 @@ export default function AboutPage() {
             </h2>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-3.5">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-2.5 lg:gap-3">
             {(
               [
                 {
@@ -143,7 +143,9 @@ export default function AboutPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-50px" }}
                   transition={{ duration: 0.5, delay: i * 0.08 }}
-                  className="p-3.5 md:p-4 rounded-2xl bg-white border border-border hover:border-ppmi-red/30 hover:shadow-lg hover:shadow-ppmi-red/5 transition-all min-w-0"
+                  className={`rounded-2xl bg-white border border-border hover:border-ppmi-red/30 hover:shadow-lg hover:shadow-ppmi-red/5 transition-all min-w-0 ${
+                    i === 1 ? "p-3 md:p-3.5 lg:p-4" : "p-3.5 md:p-4"
+                  }`}
                 >
                   <div className="w-10 h-10 rounded-lg bg-ppmi-red-soft text-ppmi-red flex items-center justify-center mb-2">
                     <Icon size={20} />
@@ -151,7 +153,13 @@ export default function AboutPage() {
                   <h3 className="text-lg md:text-xl text-text font-semibold mb-1.5 lg:whitespace-nowrap">
                     {item.title}
                   </h3>
-                  <p className="text-text-soft text-sm md:text-[0.9375rem] leading-snug mb-1.5 break-keep">
+                  <p
+                    className={`text-text-soft leading-snug mb-1.5 break-keep ${
+                      i === 1
+                        ? "text-[0.8125rem] md:text-[0.75rem] lg:text-[0.8125rem] xl:text-[0.9375rem]"
+                        : "text-sm md:text-[0.9375rem]"
+                    }`}
+                  >
                     {item.desc}
                   </p>
                   <p className="text-[11px] text-text-light italic leading-tight prose-latin mt-0.5">
