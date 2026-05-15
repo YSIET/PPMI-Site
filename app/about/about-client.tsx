@@ -9,7 +9,7 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-24 pb-8 md:pt-28 md:pb-12 bg-gradient-to-br from-primary-soft via-background to-background relative overflow-hidden">
+      <section className="pt-20 pb-5 md:pt-24 md:pb-7 bg-gradient-to-br from-primary-soft via-background to-background relative overflow-hidden">
         <div className="absolute top-0 right-0 w-[45%] h-[60%] bg-gradient-to-bl from-primary/15 to-transparent rounded-full blur-3xl" />
         <div className="absolute bottom-0 left-0 w-[35%] h-[40%] bg-gradient-to-tr from-accent/8 to-transparent rounded-full blur-3xl" />
         <div className="relative max-w-[1400px] mx-auto px-6 lg:px-12">
@@ -19,8 +19,8 @@ export default function AboutPage() {
             transition={{ duration: 0.6 }}
             className="max-w-7xl"
           >
-            <div className="text-eyebrow text-ppmi-red mb-3">About PPMI</div>
-            <h1 className="text-display text-4xl md:text-5xl lg:text-6xl text-text mb-3 leading-[1.05]">
+            <div className="text-eyebrow text-ppmi-red mb-2">About PPMI</div>
+            <h1 className="text-display text-4xl md:text-5xl lg:text-6xl text-text mb-2 leading-[1.05]">
               데이터로
               <br />
               <span className="text-gradient">헬스케어를 다시 정의합니다</span>
@@ -33,32 +33,32 @@ export default function AboutPage() {
       </section>
 
       {/* 미션 — 의도적 다크 한 섹션 */}
-      <section className="py-10 md:py-12 bg-primary-dark text-white relative overflow-hidden">
+      <section className="py-7 md:py-9 bg-primary-dark text-white relative overflow-hidden">
         <div className="absolute -top-32 -right-32 w-[40%] h-[80%] bg-gradient-to-bl from-primary/30 to-transparent rounded-full blur-3xl" />
         <div className="relative max-w-[1400px] mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 md:gap-5">
             <div className="lg:col-span-5">
-              <div className="text-eyebrow text-ppmi-red mb-3">Our Mission</div>
-              <h2 className="text-display text-3xl md:text-4xl lg:text-5xl lg:whitespace-nowrap">
+              <div className="text-eyebrow text-ppmi-red mb-2">Our Mission</div>
+              <h2 className="text-display text-3xl md:text-4xl lg:text-4xl xl:text-5xl lg:whitespace-nowrap">
                 미션 & 비전
               </h2>
             </div>
-            <div className="lg:col-span-7 space-y-5">
+            <div className="lg:col-span-7 space-y-3 md:space-y-4">
               <div>
-                <div className="text-ppmi-red text-eyebrow mb-3">Mission</div>
-                <p className="text-lg md:text-xl text-white leading-snug font-display">
+                <div className="text-ppmi-red text-eyebrow mb-2">Mission</div>
+                <p className="text-base md:text-lg text-white leading-snug font-display">
                   검사가 곧 솔루션이 되는 펫 헬스케어 경험을 만든다.
                 </p>
-                <p className="mt-2 text-white/60 italic text-sm prose-latin">
+                <p className="mt-1 text-white/60 italic text-sm leading-tight prose-latin">
                   Make pet healthcare where testing itself becomes the solution.
                 </p>
               </div>
-              <div className="border-t border-white/10 pt-5">
-                <div className="text-ppmi-red text-eyebrow mb-3">Vision</div>
-                <p className="text-lg md:text-xl text-white leading-snug font-display">
+              <div className="border-t border-white/10 pt-3 md:pt-4">
+                <div className="text-ppmi-red text-eyebrow mb-2">Vision</div>
+                <p className="text-base md:text-lg text-white leading-snug font-display">
                   반려동물의 모든 생체 데이터가 만나는 곳.
                 </p>
-                <p className="mt-2 text-white/60 italic text-sm prose-latin">
+                <p className="mt-1 text-white/60 italic text-sm leading-tight prose-latin">
                   Where every biological signal of pets comes together.
                 </p>
               </div>
@@ -68,22 +68,22 @@ export default function AboutPage() {
       </section>
 
       {/* 강점 */}
-      <section className="py-10 md:py-12 bg-background">
+      <section className="py-6 md:py-8 bg-background">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mb-6 max-w-3xl"
+            className="mb-4 max-w-3xl"
           >
-            <div className="text-eyebrow text-ppmi-red mb-3">Our Strengths</div>
+            <div className="text-eyebrow text-ppmi-red mb-1.5">Our Strengths</div>
             <h2 className="text-display text-3xl md:text-4xl lg:text-5xl text-text">
               경쟁사가 따라올 수 없는 진입장벽
             </h2>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-3.5">
             {(
               [
                 {
@@ -143,14 +143,20 @@ export default function AboutPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-50px" }}
                   transition={{ duration: 0.5, delay: i * 0.08 }}
-                  className="p-5 lg:p-6 rounded-2xl bg-white border border-border hover:border-ppmi-red/30 hover:shadow-lg hover:shadow-ppmi-red/5 transition-all min-w-0"
+                  className="p-3.5 md:p-4 rounded-2xl bg-white border border-border hover:border-ppmi-red/30 hover:shadow-lg hover:shadow-ppmi-red/5 transition-all min-w-0"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-ppmi-red-soft text-ppmi-red flex items-center justify-center mb-3">
-                    <Icon size={22} />
+                  <div className="w-10 h-10 rounded-lg bg-ppmi-red-soft text-ppmi-red flex items-center justify-center mb-2">
+                    <Icon size={20} />
                   </div>
-                  <h3 className="text-xl text-text font-semibold mb-2 lg:whitespace-nowrap">{item.title}</h3>
-                  <p className="text-text-soft text-sm md:text-[0.9375rem] leading-snug mb-2 break-keep">{item.desc}</p>
-                  <p className="text-xs text-text-light italic prose-latin">{item.en}</p>
+                  <h3 className="text-lg md:text-xl text-text font-semibold mb-1.5 lg:whitespace-nowrap">
+                    {item.title}
+                  </h3>
+                  <p className="text-text-soft text-sm md:text-[0.9375rem] leading-snug mb-1.5 break-keep">
+                    {item.desc}
+                  </p>
+                  <p className="text-[11px] text-text-light italic leading-tight prose-latin mt-0.5">
+                    {item.en}
+                  </p>
                 </motion.div>
               );
             })}
@@ -159,9 +165,9 @@ export default function AboutPage() {
       </section>
 
       {/* Leadership */}
-      <section className="py-8 md:py-10 bg-background">
+      <section className="py-5 md:py-7 bg-background">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5 items-stretch">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4 items-stretch">
             {team.map((member, i) => (
               <motion.div
                 key={member.name}
@@ -169,20 +175,20 @@ export default function AboutPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.5, delay: i * 0.08 }}
-                className="group flex flex-col h-full p-4 md:p-5 rounded-2xl bg-white border border-border hover:border-ppmi-red/30 hover:shadow-lg hover:shadow-ppmi-red/5 transition-all"
+                className="group flex flex-col h-full p-3 md:p-4 rounded-2xl bg-white border border-border hover:border-ppmi-red/30 hover:shadow-lg hover:shadow-ppmi-red/5 transition-all"
                 style={{ borderTopColor: "var(--ppmi-red)", borderTopWidth: "3px" }}
               >
-                <div className="text-eyebrow text-ppmi-red mb-2">
+                <div className="text-eyebrow text-ppmi-red mb-1.5">
                   {String(i + 1).padStart(2, "0")}
                 </div>
-                <div className="text-text-soft text-sm tracking-wide mb-3">
+                <div className="text-text-soft text-sm tracking-wide mb-2">
                   {member.role.ko}
                 </div>
-                <div className="text-display text-2xl text-text mb-3">
+                <div className="text-display text-2xl text-text mb-2">
                   {member.name}
                 </div>
-                <div className="mt-auto pt-3 border-t border-border">
-                  <p className="text-text-soft text-xs leading-snug whitespace-pre-line">
+                <div className="mt-auto pt-2 border-t border-border">
+                  <p className="text-text-soft text-xs leading-tight whitespace-pre-line">
                     {member.credentials.ko}
                   </p>
                 </div>
