@@ -123,7 +123,7 @@ const positions = [
     titleEn: "Business Strategy",
     department: "전략",
     type: "정규직",
-    desc: "신규 카테고리·해외 진출·파트너십 전략 수립. CFO 직속으로 IR 자료와 사업 계획을 함께.",
+    desc: "신규 카테고리·해외 진출·파트너십 전략 수립. CFO 직속으로 사업 계획과 대외 커뮤니케이션을 함께.",
     icon: Briefcase,
   },
 ];

@@ -56,15 +56,6 @@ export default function Nav() {
             })}
           </nav>
 
-          <div className="hidden lg:flex items-center gap-3">
-            <Link
-              href="/invest"
-              className="px-5 py-2.5 text-sm font-medium text-white bg-ppmi-red hover:bg-ppmi-red-dark rounded-full transition-colors"
-            >
-              투자 문의
-            </Link>
-          </div>
-
           <button
             onClick={() => setMobileOpen(true)}
             className="lg:hidden p-2 text-navy"
@@ -117,12 +108,6 @@ export default function Nav() {
                 </span>
               </Link>
             ))}
-            <Link
-              href="/invest"
-              className="mt-6 px-5 py-3 text-center font-medium text-white bg-ppmi-red hover:bg-ppmi-red-dark rounded-full transition-colors"
-            >
-              투자 문의
-            </Link>
           </nav>
         </div>
       </div>

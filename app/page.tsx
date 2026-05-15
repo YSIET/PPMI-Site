@@ -77,34 +77,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA 섹션 — 투자/채용 (Tiffany Blue 액센트) */}
+      {/* CTA 섹션 — 채용 (Tiffany Blue 액센트) */}
       <section className="py-12 md:py-16 bg-primary text-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-[60%] h-full bg-gradient-to-l from-primary-dark/40 to-transparent" />
         <div className="absolute -bottom-32 -left-32 w-[40%] h-[60%] bg-gradient-to-tr from-primary-dark/35 to-transparent rounded-full blur-3xl" />
 
         <div className="relative max-w-[1400px] mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Link
-              href="/invest"
-              className="group relative overflow-hidden rounded-2xl border border-white/25 hover:border-white p-7 lg:p-10 transition-all bg-white/[0.06]"
-            >
-              <div className="absolute -top-20 -right-20 w-72 h-72 rounded-full bg-ppmi-red/15 blur-3xl group-hover:bg-ppmi-red/30 transition-all" />
-              <div className="relative">
-                <div className="text-eyebrow text-ppmi-red mb-3">For Investors</div>
-                <h3 className="text-display text-3xl lg:text-4xl mb-3">
-                  투자자 IR
-                  <ArrowRight className="inline-block ml-3 group-hover:translate-x-2 transition-transform" />
-                </h3>
-                <p className="text-white/85 leading-relaxed">
-                  초기 스타트업의 역동성과 폭발적인 성장 가능성. KOLAS 인정 분석부터 솔루션까지,
-                  그룹 수직통합형 펫 헬스케어 데이터 비즈니스를 만나보세요.
-                </p>
-              </div>
-            </Link>
-
+          <div className="max-w-3xl mx-auto">
             <Link
               href="/careers"
-              className="group relative overflow-hidden rounded-2xl border border-white/25 hover:border-white p-7 lg:p-10 transition-all bg-white/[0.06]"
+              className="group block relative overflow-hidden rounded-2xl border border-white/25 hover:border-white p-7 lg:p-10 transition-all bg-white/[0.06]"
             >
               <div className="absolute -top-20 -right-20 w-72 h-72 rounded-full bg-white/10 blur-3xl group-hover:bg-white/20 transition-all" />
               <div className="relative">
