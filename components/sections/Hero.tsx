@@ -1,8 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 import { heroContent } from "@/lib/data";
 
 export default function Hero() {
@@ -43,28 +41,10 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-lg text-text-soft leading-relaxed mb-6 max-w-2xl"
+              className="text-lg text-text-soft leading-relaxed max-w-2xl"
             >
               {heroContent.ko.subheadline}
             </motion.p>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-              className="flex flex-wrap gap-3"
-            >
-              <Link
-                href="/about"
-                className="group inline-flex items-center gap-2 px-6 py-3 bg-ppmi-red text-white rounded-full font-medium hover:bg-ppmi-red-dark transition-colors shadow-md shadow-ppmi-red/15"
-              >
-                회사 소개 보기
-                <ArrowRight
-                  size={18}
-                  className="group-hover:translate-x-1 transition-transform"
-                />
-              </Link>
-            </motion.div>
           </div>
 
           {/* 오른쪽: 비주얼 카드 — self-start로 텍스트와 윗줄 정렬 */}
