@@ -11,7 +11,7 @@ export default function InvestPage() {
         <h1 className="text-display text-3xl md:text-4xl text-navy mb-4">
           문의 안내
         </h1>
-        <p className="text-lg text-slate leading-snug mb-5">
+        <p className="text-xl text-slate leading-snug mb-5">
           현재 공개 IR 자료는 제공하지 않습니다. 제휴·사업 문의는 공식 연락처로 연락해
           주세요.
         </p>
@@ -23,7 +23,7 @@ export default function InvestPage() {
           {siteConfig.email}
         </a>
         <p className="mt-6">
-          <Link href="/" className="text-sm text-slate-light hover:text-navy">
+          <Link href="/" className="text-[0.9375rem] text-slate-light hover:text-navy">
             ← 홈으로
           </Link>
         </p>

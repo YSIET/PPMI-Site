@@ -12,12 +12,12 @@ export default function Footer() {
             <div className="text-footer-text font-black text-base tracking-tight group-hover:text-primary-light transition-colors">
               PPMI
             </div>
-            <div className="text-[10px] text-footer-text-soft tracking-wider">
+            <div className="text-xs text-footer-text-soft tracking-wider">
               Precision &amp; Personalized Medicine Inc.
             </div>
           </div>
         </Link>
-        <p className="mt-2.5 text-xs text-footer-text-soft">
+        <p className="mt-2.5 text-sm text-footer-text-soft">
           © 2026 {siteConfig.fullName}. All rights reserved.
         </p>
       </div>

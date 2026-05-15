@@ -114,13 +114,13 @@ export default function NuttyPage() {
                 건강한 한 입, 맛있는 습관.
               </p>
 
-              <p className="text-base md:text-lg text-slate leading-snug max-w-2xl">
+              <p className="text-[1.0625rem] md:text-lg text-slate leading-snug max-w-2xl">
                 너티는 아이언펫 검사 흐름에서 확인되는 반려동물의 영양 상태와 생체 데이터
                 인사이트를 바탕으로, 더 정밀한 식이 설계를 지향하는 PPMI의 데이터 기반
                 펫푸드 브랜드입니다.
               </p>
 
-              <p className="text-sm text-slate-light mt-2 max-w-2xl leading-snug">
+              <p className="text-[0.9375rem] text-slate-light mt-2 max-w-2xl leading-snug">
                 너티 제품 확인과 구매는 공식 판매 채널에서 진행됩니다.
               </p>
               <div className="flex flex-wrap gap-2 mt-3">
@@ -246,7 +246,7 @@ export default function NuttyPage() {
                   </div>
                   <div className="text-eyebrow text-cream/50 mb-2">{step.tag}</div>
                   <h3 className="text-lg font-display text-cream mb-1.5 lg:whitespace-nowrap">{step.title}</h3>
-                  <p className="text-cream/70 leading-snug break-keep">{step.desc}</p>
+                  <p className="text-cream/70 text-[0.9375rem] md:text-base leading-snug break-keep">{step.desc}</p>
                 </motion.div>
               );
             })}
@@ -259,7 +259,7 @@ export default function NuttyPage() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="mt-5 text-center"
           >
-            <p className="text-cream/50 text-sm italic max-w-2xl mx-auto leading-snug prose-latin">
+            <p className="text-cream/50 text-base italic max-w-2xl mx-auto leading-snug prose-latin">
               IRONPET insights, NUT:TY recipes — testing signals and diet design in one
               connected flow from sample to bowl.
             </p>
@@ -283,7 +283,7 @@ export default function NuttyPage() {
               <br />
               네 가지 약속
             </h2>
-            <p className="text-base md:text-lg text-slate leading-snug">
+            <p className="text-[1.0625rem] md:text-lg text-slate leading-snug">
               맛있게 먹어야 의미 있는 영양이 됩니다. 너티는 기호성과 영양, 기능성과
               안전성 — 어느 하나도 양보하지 않습니다.
             </p>
@@ -317,7 +317,7 @@ export default function NuttyPage() {
                   <h3 className="text-lg lg:text-xl text-navy font-display mb-1.5 lg:whitespace-nowrap">
                     {f.title}
                   </h3>
-                  <p className="text-slate leading-snug break-keep">{f.desc}</p>
+                  <p className="text-slate text-[0.9375rem] md:text-base leading-snug break-keep">{f.desc}</p>
                 </motion.div>
               );
             })}
@@ -384,14 +384,14 @@ export default function NuttyPage() {
                       >
                         {r.phase}
                       </span>
-                      <span className="text-[10px] tracking-[0.2em] text-slate-light uppercase">
+                      <span className="text-[11px] tracking-[0.2em] text-slate-light uppercase">
                         · {r.status}
                       </span>
                     </div>
                     <h3 className="text-lg lg:text-xl text-navy font-display mb-1.5">
                       {r.title}
                     </h3>
-                    <p className="text-slate leading-snug max-w-3xl break-keep">{r.desc}</p>
+                    <p className="text-slate text-[0.9375rem] md:text-base leading-snug max-w-3xl break-keep">{r.desc}</p>
                   </div>
                 </motion.div>
               ))}
@@ -424,7 +424,7 @@ export default function NuttyPage() {
               <h2 className="text-display text-2xl md:text-3xl lg:text-4xl text-cream leading-[1.1] mb-2 xl:whitespace-nowrap">
                 검사 데이터에서 출발하는 펫푸드
               </h2>
-              <p className="text-base md:text-lg text-cream/75 leading-snug max-w-2xl mb-3">
+              <p className="text-lg md:text-xl text-cream/75 leading-snug max-w-2xl mb-3">
                 너티는 아이언펫 검사 흐름에서 확인되는 반려동물의 영양 상태와 생체 데이터
                 인사이트를 바탕으로, 더 정밀한 식이 설계를 지향하는 PPMI의 데이터 기반
                 펫푸드 브랜드입니다. 일반적인 영양 가이드라인만 따르는 사료와 달리, 검사
@@ -432,7 +432,7 @@ export default function NuttyPage() {
               </p>
               <Link
                 href="/ironpet"
-                className="group inline-flex items-center gap-2 shrink-0 text-gold font-medium hover:text-gold-light transition-colors text-sm lg:whitespace-nowrap"
+                className="group inline-flex items-center gap-2 shrink-0 text-gold font-medium hover:text-gold-light transition-colors text-[0.9375rem] lg:whitespace-nowrap"
               >
                 아이언펫 검사 자세히 보기
                 <ArrowRight
@@ -463,7 +463,7 @@ export default function NuttyPage() {
                     <p className="text-display text-xl md:text-2xl font-display mb-2 leading-snug xl:whitespace-nowrap">
                       아이언펫 검사 흐름과 연결되는 데이터 기반 펫푸드
                     </p>
-                    <p className="text-cream/85 text-sm leading-snug">
+                    <p className="text-cream/85 text-[0.9375rem] md:text-base leading-snug">
                       검사에서 정리된 영양·생체 신호가 식이 설계로 이어지도록, 아이언펫과
                       너티가 한 데이터 루프 안에서 맞물려 돌아갑니다.
                     </p>
@@ -488,7 +488,7 @@ export default function NuttyPage() {
             <h2 className="text-display text-2xl md:text-3xl lg:text-4xl text-navy leading-tight mb-2 xl:whitespace-nowrap">
               너티 공식 판매 채널에서 확인하세요
             </h2>
-            <p className="text-sm md:text-base text-slate leading-snug">
+            <p className="text-base md:text-lg text-slate leading-snug">
               너티 제품 정보와 구매는 공식 판매 채널에서 확인하실 수 있습니다. 검사 흐름과
               데이터 연결은{" "}
               <Link href="/ironpet" className="text-ppmi-red font-medium hover:underline underline-offset-4">
@@ -502,7 +502,7 @@ export default function NuttyPage() {
               href={NUTTY_STORE}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center justify-center gap-1.5 shrink-0 min-w-fit px-3 py-1.5 bg-navy text-cream rounded-full text-xs font-medium hover:bg-primary-dark transition-colors lg:whitespace-nowrap w-full sm:w-auto"
+              className="group inline-flex items-center justify-center gap-1.5 shrink-0 min-w-fit px-3 py-1.5 bg-navy text-cream rounded-full text-sm font-medium hover:bg-primary-dark transition-colors lg:whitespace-nowrap w-full sm:w-auto"
             >
               너티 제품 보러가기
               <ArrowUpRight size={14} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform shrink-0" />
@@ -511,7 +511,7 @@ export default function NuttyPage() {
               href={NAVER_SMARTSTORE}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center justify-center gap-1.5 shrink-0 min-w-fit px-3 py-1.5 border-2 border-navy/20 text-navy rounded-full text-xs font-medium hover:border-navy hover:bg-navy hover:text-cream transition-colors lg:whitespace-nowrap w-full sm:w-auto"
+              className="group inline-flex items-center justify-center gap-1.5 shrink-0 min-w-fit px-3 py-1.5 border-2 border-navy/20 text-navy rounded-full text-sm font-medium hover:border-navy hover:bg-navy hover:text-cream transition-colors lg:whitespace-nowrap w-full sm:w-auto"
             >
               네이버 스마트스토어에서 보기
               <ArrowUpRight size={14} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform shrink-0" />

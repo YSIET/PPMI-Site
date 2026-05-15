@@ -25,7 +25,7 @@ export default function AboutPage() {
               <br />
               <span className="text-gradient">헬스케어를 다시 정의합니다</span>
             </h1>
-            <p className="text-base md:text-lg text-text-soft leading-snug max-w-3xl lg:max-w-4xl lg:text-[1.0625rem]">
+            <p className="text-[1.0625rem] md:text-lg text-text-soft leading-snug max-w-3xl lg:max-w-[42rem] lg:text-[1.125rem]">
               PPMI는 KOLAS 인정 관계사의 분석력을 기반으로 반려동물 생체 데이터를 통합·해석하는 펫 헬스케어 데이터 기업입니다.
             </p>
           </motion.div>
@@ -46,19 +46,19 @@ export default function AboutPage() {
             <div className="lg:col-span-7 space-y-3 md:space-y-4">
               <div>
                 <div className="text-ppmi-red text-eyebrow mb-2">Mission</div>
-                <p className="text-base md:text-lg text-white leading-snug font-display">
+                <p className="text-lg md:text-xl text-white leading-snug font-display">
                   검사가 곧 솔루션이 되는 펫 헬스케어 경험을 만든다.
                 </p>
-                <p className="mt-1 text-white/60 italic text-sm leading-tight prose-latin">
+                <p className="mt-1 text-white/60 italic text-base leading-snug prose-latin">
                   Make pet healthcare where testing itself becomes the solution.
                 </p>
               </div>
               <div className="border-t border-white/10 pt-3 md:pt-4">
                 <div className="text-ppmi-red text-eyebrow mb-2">Vision</div>
-                <p className="text-base md:text-lg text-white leading-snug font-display">
+                <p className="text-lg md:text-xl text-white leading-snug font-display">
                   반려동물의 모든 생체 데이터가 만나는 곳.
                 </p>
-                <p className="mt-1 text-white/60 italic text-sm leading-tight prose-latin">
+                <p className="mt-1 text-white/60 italic text-base leading-snug prose-latin">
                   Where every biological signal of pets comes together.
                 </p>
               </div>
@@ -156,13 +156,13 @@ export default function AboutPage() {
                   <p
                     className={`text-text-soft leading-snug mb-1.5 break-keep ${
                       i === 1
-                        ? "text-[0.8125rem] md:text-[0.75rem] lg:text-[0.8125rem] xl:text-[0.9375rem]"
-                        : "text-sm md:text-[0.9375rem]"
+                        ? "text-[0.875rem] md:text-[0.8125rem] lg:text-[0.9375rem] xl:text-base"
+                        : "text-[0.9375rem] md:text-base"
                     }`}
                   >
                     {item.desc}
                   </p>
-                  <p className="text-[11px] text-text-light italic leading-tight prose-latin mt-0.5">
+                  <p className="text-xs text-text-light italic leading-snug prose-latin mt-0.5">
                     {item.en}
                   </p>
                 </motion.div>
@@ -189,14 +189,14 @@ export default function AboutPage() {
                 <div className="text-eyebrow text-ppmi-red mb-1.5">
                   {String(i + 1).padStart(2, "0")}
                 </div>
-                <div className="text-text-soft text-sm tracking-wide mb-2">
+                <div className="text-text-soft text-[0.9375rem] tracking-wide mb-2">
                   {member.role.ko}
                 </div>
                 <div className="text-display text-2xl text-text mb-2">
                   {member.name}
                 </div>
                 <div className="mt-auto pt-2 border-t border-border">
-                  <p className="text-text-soft text-xs leading-tight whitespace-pre-line">
+                  <p className="text-text-soft text-sm leading-snug whitespace-pre-line">
                     {member.credentials.ko}
                   </p>
                 </div>

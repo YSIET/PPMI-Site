@@ -18,7 +18,7 @@ export default function Home() {
               <span>{heroEyebrowKo.lead}</span>
               <span className="text-ppmi-red">{heroEyebrowKo.accent}</span>
             </h2>
-            <p className="mt-2 w-full text-sm sm:text-base lg:text-[0.9375rem] xl:text-lg text-text leading-snug 2xl:whitespace-nowrap">
+            <p className="mt-2 w-full text-[0.9375rem] sm:text-base lg:text-lg xl:text-[1.125rem] text-text leading-snug 2xl:whitespace-nowrap max-w-[68rem]">
               AI는 결국 데이터의 게임입니다. PPMI는 단순히 AI를 활용하는 회사가 아니라,{" "}
               <span className="text-ppmi-red font-semibold">
                 반려동물 생체 데이터를 통합·해석해 브랜드와 서비스로 잇는
@@ -49,7 +49,7 @@ export default function Home() {
                 <div className="text-text font-semibold mb-1.5 xl:whitespace-nowrap">
                   {item.title}
                 </div>
-                <div className="text-sm text-text-soft leading-snug break-keep">
+                <div className="text-[0.9375rem] text-text-soft leading-snug break-keep">
                   {item.desc}
                 </div>
               </div>

@@ -129,12 +129,12 @@ export default function IronpetPage() {
                 건강한 습관의 완성.
               </p>
 
-              <p className="text-base md:text-lg text-slate leading-snug max-w-2xl">
+              <p className="text-[1.0625rem] md:text-lg text-slate leading-snug max-w-2xl">
                 말 못 하는 아이의 몸이 보내는 신호를, 데이터로 먼저 듣습니다.
                 병원에 가지 않아도, 집에서 모발 한 가닥이면 충분합니다.
               </p>
 
-              <p className="text-sm text-slate-light mt-2 max-w-2xl leading-snug">
+              <p className="text-[0.9375rem] text-slate-light mt-2 max-w-2xl leading-snug">
                 검사 신청과 제품 확인은 아이언펫 공식 채널에서 진행됩니다.
               </p>
               <div className="flex flex-wrap gap-2 mt-3">
@@ -256,7 +256,7 @@ export default function IronpetPage() {
               <br />
               자주 가시나요?
             </h2>
-            <p className="text-base md:text-lg text-cream/85 leading-snug max-w-2xl">
+            <p className="text-[1.0625rem] md:text-lg text-cream/85 leading-snug max-w-2xl">
               많은 보호자가 이 세 가지 이유로 정기 건강 관리를 미루고 있습니다.
               아이언펫은 이 장벽을 데이터로 풉니다.
             </p>
@@ -278,7 +278,7 @@ export default function IronpetPage() {
                     <Icon size={24} />
                   </div>
                   <h3 className="text-lg font-display text-cream mb-1.5 lg:whitespace-nowrap">{p.title}</h3>
-                  <p className="text-cream/80 leading-snug break-keep">{p.desc}</p>
+                  <p className="text-cream/80 text-[0.9375rem] md:text-base leading-snug break-keep">{p.desc}</p>
                 </motion.div>
               );
             })}
@@ -302,7 +302,7 @@ export default function IronpetPage() {
               <br />
               <span style={{ color: BRAND_COLOR }}>비대면 · 저비용</span> 사전 관리
             </h2>
-            <p className="text-base md:text-lg text-slate leading-snug">
+            <p className="text-[1.0625rem] md:text-lg text-slate leading-snug">
               집에서 보호자가 직접 채취한 모발 한 가닥. 관계사 시험기관의 측정 결과를 바탕으로
               PPMI가 그 안에 담긴 영양 균형, 중금속 노출, 스트레스 신호를 데이터로 풀어냅니다.
             </p>
@@ -340,7 +340,7 @@ export default function IronpetPage() {
                   </div>
                   <div className="text-eyebrow text-slate-light mb-1">{p.titleEn}</div>
                   <h3 className="text-base text-navy font-semibold mb-1.5 lg:whitespace-nowrap">{p.title}</h3>
-                  <p className="text-sm text-slate leading-snug break-keep">{p.desc}</p>
+                  <p className="text-[0.9375rem] md:text-base text-slate leading-snug break-keep">{p.desc}</p>
                 </motion.div>
               );
             })}
@@ -393,7 +393,7 @@ export default function IronpetPage() {
                 {compareBefore.map((item) => (
                   <li
                     key={item}
-                    className="flex items-start gap-3 text-cream/70 text-sm leading-snug"
+                    className="flex items-start gap-3 text-cream/70 text-[0.9375rem] leading-snug"
                   >
                     <span className="mt-1.5 w-1 h-1 rounded-full bg-cream/40 shrink-0" />
                     {item}
@@ -427,7 +427,7 @@ export default function IronpetPage() {
                   {compareAfter.map((item) => (
                     <li
                       key={item}
-                      className="flex items-start gap-3 text-cream text-sm leading-snug"
+                      className="flex items-start gap-3 text-cream text-[0.9375rem] leading-snug"
                     >
                       <Check size={14} className="mt-1 text-cream shrink-0" />
                       {item}
@@ -460,7 +460,7 @@ export default function IronpetPage() {
                   <h2 className="text-display text-2xl md:text-3xl lg:text-4xl leading-tight mb-2">
                     아이언펫 공식 채널에서 시작하세요
                   </h2>
-                  <p className="text-cream/85 leading-snug max-w-2xl text-xs md:text-sm">
+                  <p className="text-cream/85 leading-snug max-w-2xl text-sm md:text-[0.9375rem]">
                     아이언펫 검사 신청과 관련 제품 확인은 공식 채널에서 진행됩니다. 검사
                     데이터가 펫푸드 설계로 이어지는 이야기는 PPMI 사이트의{" "}
                     <Link href="/nutty" className="text-gold hover:text-gold-light underline-offset-4 hover:underline font-medium">
@@ -474,7 +474,7 @@ export default function IronpetPage() {
                     href={IRONPET_DASHBOARD}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group inline-flex items-center justify-center gap-1.5 shrink-0 min-w-fit px-3 py-1.5 bg-cream text-navy rounded-full text-xs font-medium hover:bg-gold transition-colors lg:whitespace-nowrap w-full sm:w-auto"
+                    className="group inline-flex items-center justify-center gap-1.5 shrink-0 min-w-fit px-3 py-1.5 bg-cream text-navy rounded-full text-sm font-medium hover:bg-gold transition-colors lg:whitespace-nowrap w-full sm:w-auto"
                   >
                     아이언펫 검사 시작하기
                     <ArrowUpRight size={14} className="opacity-80 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform shrink-0" />
@@ -483,7 +483,7 @@ export default function IronpetPage() {
                     href={IRONPET_STORE}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group inline-flex items-center justify-center gap-1.5 shrink-0 min-w-fit px-3 py-1.5 border border-cream/40 text-cream rounded-full text-xs font-medium hover:bg-cream/10 transition-colors lg:whitespace-nowrap w-full sm:w-auto"
+                    className="group inline-flex items-center justify-center gap-1.5 shrink-0 min-w-fit px-3 py-1.5 border border-cream/40 text-cream rounded-full text-sm font-medium hover:bg-cream/10 transition-colors lg:whitespace-nowrap w-full sm:w-auto"
                   >
                     아이언펫 스토어 보기
                     <ArrowUpRight size={14} className="opacity-80 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform shrink-0" />

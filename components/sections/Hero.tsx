@@ -42,7 +42,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-lg text-text-soft leading-snug max-w-2xl"
+              className="text-[1.0625rem] md:text-xl text-text-soft leading-snug max-w-2xl"
             >
               {heroContent.ko.subheadline}
             </motion.p>
@@ -62,7 +62,7 @@ export default function Hero() {
               <div className="relative">
                 <div className="flex items-center justify-between mb-3">
                   <div className="text-eyebrow text-ppmi-red">PPMI Pipeline</div>
-                  <span className="text-[10px] tracking-[0.2em] text-text-light uppercase">
+                  <span className="text-[11px] tracking-[0.2em] text-text-light uppercase">
                     Vertical Loop
                   </span>
                 </div>
@@ -89,7 +89,7 @@ export default function Hero() {
                       </span>
                       <div>
                         <div className="text-text font-medium lg:whitespace-nowrap">{item.label}</div>
-                        <div className="text-text-soft text-xs mt-0.5">{item.sub}</div>
+                        <div className="text-text-soft text-sm mt-0.5 leading-snug break-keep">{item.sub}</div>
                       </div>
                     </motion.div>
                   ))}

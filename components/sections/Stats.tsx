@@ -62,10 +62,10 @@ export default function Stats() {
               <div className="text-display text-4xl md:text-5xl lg:text-6xl text-ppmi-red mb-1 leading-none tabular-nums">
                 <Counter value={stat.value} suffix={stat.suffix} />
               </div>
-              <div className="text-text font-medium text-sm md:text-base mb-0.5 leading-tight break-keep">
+              <div className="text-text font-medium text-[0.9375rem] md:text-lg mb-0.5 leading-snug break-keep">
                 {stat.label.ko}
               </div>
-              <div className="text-text-light text-[10px] md:text-xs tracking-wider uppercase leading-tight">
+              <div className="text-text-light text-[11px] md:text-xs tracking-wider uppercase leading-snug">
                 {stat.label.en}
               </div>
             </motion.div>

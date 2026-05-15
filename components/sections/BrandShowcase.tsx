@@ -42,7 +42,7 @@ export default function BrandShowcase() {
                 }}
               >
                 <div className="flex items-start justify-between mb-3">
-                  <span className="text-[10px] tracking-[0.2em] uppercase text-text-light leading-tight">
+                  <span className="text-[11px] tracking-[0.2em] uppercase text-text-light leading-snug">
                     {brand.market.ko}
                   </span>
                   <span className="relative w-8 h-8 shrink-0 rounded-full border border-border flex items-center justify-center text-text-soft transition-colors duration-300 group-hover:border-transparent group-hover:text-white overflow-hidden">
@@ -63,16 +63,16 @@ export default function BrandShowcase() {
                 <h3 className="text-display text-2xl md:text-3xl lg:text-4xl text-text mb-1 group-hover:translate-x-0.5 transition-transform lg:whitespace-nowrap">
                   {brand.name}
                 </h3>
-                <p className="text-sm text-text-soft mb-2 leading-tight">
+                <p className="text-[0.9375rem] text-text-soft mb-2 leading-snug">
                   {brand.nameKo}
                 </p>
 
-                <p className="text-text leading-snug text-sm mb-2 line-clamp-4 flex-1 min-h-0 break-keep">
+                <p className="text-text leading-snug text-base mb-2 line-clamp-4 flex-1 min-h-0 break-keep">
                   {brand.description.ko}
                 </p>
 
                 <div className="mt-auto pt-2 border-t border-border">
-                  <span className="text-[11px] italic text-text-light leading-snug block prose-latin">
+                  <span className="text-xs italic text-text-light leading-snug block prose-latin">
                     {brand.tagline.en}
                   </span>
                 </div>
