@@ -16,7 +16,7 @@ export default function AboutPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="max-w-4xl"
+            className="max-w-7xl"
           >
             <div className="text-eyebrow text-ppmi-red mb-3">About PPMI</div>
             <h1 className="text-display text-4xl md:text-5xl lg:text-6xl text-text mb-3 leading-[1.05]">
@@ -24,7 +24,7 @@ export default function AboutPage() {
               <br />
               <span className="text-gradient">헬스케어를 다시 정의합니다</span>
             </h1>
-            <p className="text-lg text-text-soft leading-snug max-w-2xl">
+            <p className="text-base md:text-lg text-text-soft leading-snug max-w-none lg:text-[1.0625rem] lg:whitespace-nowrap">
               PPMI는 KOLAS 인정 관계사의 분석력을 기반으로 반려동물 생체 데이터를 통합·해석하는 펫 헬스케어 데이터 기업입니다.
             </p>
           </motion.div>
@@ -36,15 +36,13 @@ export default function AboutPage() {
         <div className="absolute -top-32 -right-32 w-[40%] h-[80%] bg-gradient-to-bl from-primary/30 to-transparent rounded-full blur-3xl" />
         <div className="relative max-w-[1400px] mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-            <div className="lg:col-span-4">
+            <div className="lg:col-span-5">
               <div className="text-eyebrow text-ppmi-red mb-3">Our Mission</div>
-              <h2 className="text-display text-3xl md:text-4xl lg:text-5xl">
-                미션 &
-                <br />
-                비전
+              <h2 className="text-display text-3xl md:text-4xl lg:text-5xl lg:whitespace-nowrap">
+                미션 & 비전
               </h2>
             </div>
-            <div className="lg:col-span-8 space-y-5">
+            <div className="lg:col-span-7 space-y-5">
               <div>
                 <div className="text-ppmi-red text-eyebrow mb-3">Mission</div>
                 <p className="text-lg md:text-xl text-white leading-snug font-display">
