@@ -7,7 +7,7 @@ import { brands } from "@/lib/data";
 
 export default function BrandShowcase() {
   return (
-    <section className="pt-7 pb-7 md:pt-9 md:pb-9 bg-background relative">
+    <section className="pt-4 pb-7 md:pt-5 md:pb-9 bg-background relative">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
