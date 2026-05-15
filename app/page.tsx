@@ -1,6 +1,7 @@
 import Hero from "@/components/sections/Hero";
 import Stats from "@/components/sections/Stats";
 import BrandShowcase from "@/components/sections/BrandShowcase";
+import { heroEyebrowKo } from "@/lib/data";
 
 export default function Home() {
   return (
@@ -14,7 +15,8 @@ export default function Home() {
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <header className="mb-4 md:mb-5">
             <h2 className="text-display text-3xl md:text-4xl lg:text-5xl text-text leading-tight lg:whitespace-nowrap">
-              <span className="text-gradient">AI시대의 데이터 생산자</span>
+              <span>{heroEyebrowKo.lead}</span>
+              <span className="text-ppmi-red">{heroEyebrowKo.accent}</span>
             </h2>
             <p className="mt-2 w-full text-sm sm:text-base lg:text-[0.9375rem] xl:text-lg text-text leading-snug 2xl:whitespace-nowrap">
               AI는 결국 데이터의 게임입니다. PPMI는 단순히 AI를 활용하는 회사가 아니라,{" "}

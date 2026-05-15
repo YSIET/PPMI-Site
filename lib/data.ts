@@ -17,9 +17,15 @@ export const siteConfig = {
     email: "contact@ppmi.kr",
   };
   
+  /** 홈 Hero 배지·Why 제목 등에 공통 사용 — lead는 기본색, accent는 PPMI 강조색 */
+  export const heroEyebrowKo = {
+    lead: "AI 시대의 ",
+    accent: "데이터 생산자",
+  } as const;
+
   export const heroContent = {
     ko: {
-      eyebrow: "AI 시대, 데이터의 생산자",
+      eyebrow: `${heroEyebrowKo.lead}${heroEyebrowKo.accent}`,
       headline: "검사가 솔루션이 되는\n펫 헬스케어 데이터 기업",
       subheadline:
         "PPMI는 반려동물 생체 데이터를 통합·해석하여 아이언펫과 너티로 잇는 펫 헬스케어 데이터 기업입니다. 정밀 분석은 KOLAS 인정 관계사 (주)와이에스환경기술연구원이 수행합니다.",

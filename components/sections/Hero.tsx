@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { heroContent } from "@/lib/data";
+import { heroContent, heroEyebrowKo } from "@/lib/data";
 
 export default function Hero() {
   return (
@@ -21,7 +21,8 @@ export default function Hero() {
               className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-ppmi-red/25 bg-white/70 backdrop-blur-sm mb-3 shadow-sm shadow-ppmi-red/5"
             >
               <span className="w-1.5 h-1.5 rounded-full bg-ppmi-red animate-pulse" />
-              <span className="text-eyebrow text-ppmi-red">{heroContent.ko.eyebrow}</span>
+              <span className="text-eyebrow text-text">{heroEyebrowKo.lead}</span>
+              <span className="text-eyebrow text-ppmi-red">{heroEyebrowKo.accent}</span>
             </motion.div>
 
             <motion.h1
