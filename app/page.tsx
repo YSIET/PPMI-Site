@@ -76,34 +76,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* CTA 섹션 — 채용 (Tiffany Blue 액센트) */}
-      <section className="py-12 md:py-16 bg-primary text-white relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-[60%] h-full bg-gradient-to-l from-primary-dark/40 to-transparent" />
-        <div className="absolute -bottom-32 -left-32 w-[40%] h-[60%] bg-gradient-to-tr from-primary-dark/35 to-transparent rounded-full blur-3xl" />
-
-        <div className="relative max-w-[1400px] mx-auto px-6 lg:px-12">
-          <div className="max-w-3xl mx-auto">
-            <Link
-              href="/careers"
-              className="group block relative overflow-hidden rounded-2xl border border-white/25 hover:border-white p-7 lg:p-10 transition-all bg-white/[0.06]"
-            >
-              <div className="absolute -top-20 -right-20 w-72 h-72 rounded-full bg-white/10 blur-3xl group-hover:bg-white/20 transition-all" />
-              <div className="relative">
-                <div className="text-eyebrow text-white/90 mb-3">Join Us</div>
-                <h3 className="text-display text-3xl lg:text-4xl mb-3">
-                  함께할 동료
-                  <ArrowRight className="inline-block ml-3 group-hover:translate-x-2 transition-transform" />
-                </h3>
-                <p className="text-white/85 leading-relaxed">
-                  연세대·MIT·Yale 출신과 함께, 데이터로 헬스케어를 바꿉니다. 우리의
-                  여정에 동참할 사람을 찾고 있습니다.
-                </p>
-              </div>
-            </Link>
-          </div>
-        </div>
-      </section>
     </>
   );
 }

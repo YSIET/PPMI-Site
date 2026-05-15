@@ -72,14 +72,6 @@ export default function Footer() {
                 </a>
               </li>
               <li className="text-footer-text-soft">서울특별시</li>
-              <li>
-                <Link
-                  href="/careers"
-                  className="text-footer-text hover:text-primary-light transition-colors"
-                >
-                  채용 안내
-                </Link>
-              </li>
             </ul>
           </div>
         </div>

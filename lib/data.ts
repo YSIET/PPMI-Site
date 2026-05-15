@@ -107,5 +107,4 @@ export const siteConfig = {
     { href: "/about", label: { ko: "회사소개", en: "About" } },
     { href: "/ironpet", label: { ko: "아이언펫", en: "IRONPET" } },
     { href: "/nutty", label: { ko: "너티", en: "NUT:TY" } },
-    { href: "/careers", label: { ko: "채용", en: "Careers" } },
   ];

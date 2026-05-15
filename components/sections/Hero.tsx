@@ -64,16 +64,6 @@ export default function Hero() {
                   className="group-hover:translate-x-1 transition-transform"
                 />
               </Link>
-              <Link
-                href="/careers"
-                className="group inline-flex items-center gap-2 px-6 py-3 border-2 border-text/20 text-text rounded-full font-medium hover:border-text hover:bg-text hover:text-white transition-all"
-              >
-                채용 안내
-                <ArrowRight
-                  size={18}
-                  className="group-hover:translate-x-1 transition-transform"
-                />
-              </Link>
             </motion.div>
           </div>
 
