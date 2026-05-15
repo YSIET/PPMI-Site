@@ -277,8 +277,8 @@ export default function IronpetPage() {
                   <div className="w-11 h-11 rounded-xl bg-cream/15 text-cream flex items-center justify-center mb-2">
                     <Icon size={24} />
                   </div>
-                  <h3 className="text-lg font-display text-cream mb-1.5">{p.title}</h3>
-                  <p className="text-cream/80 leading-snug">{p.desc}</p>
+                  <h3 className="text-lg font-display text-cream mb-1.5 lg:whitespace-nowrap">{p.title}</h3>
+                  <p className="text-cream/80 leading-snug break-keep">{p.desc}</p>
                 </motion.div>
               );
             })}
@@ -340,7 +340,7 @@ export default function IronpetPage() {
                   </div>
                   <div className="text-eyebrow text-slate-light mb-1">{p.titleEn}</div>
                   <h3 className="text-base text-navy font-semibold mb-1.5 lg:whitespace-nowrap">{p.title}</h3>
-                  <p className="text-sm text-slate leading-snug">{p.desc}</p>
+                  <p className="text-sm text-slate leading-snug break-keep">{p.desc}</p>
                 </motion.div>
               );
             })}

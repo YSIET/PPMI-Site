@@ -62,7 +62,7 @@ export default function Stats() {
               <div className="text-display text-4xl md:text-5xl lg:text-6xl text-ppmi-red mb-1 leading-none tabular-nums">
                 <Counter value={stat.value} suffix={stat.suffix} />
               </div>
-              <div className="text-text font-medium text-sm md:text-base mb-0.5 leading-tight">
+              <div className="text-text font-medium text-sm md:text-base mb-0.5 leading-tight break-keep">
                 {stat.label.ko}
               </div>
               <div className="text-text-light text-[10px] md:text-xs tracking-wider uppercase leading-tight">

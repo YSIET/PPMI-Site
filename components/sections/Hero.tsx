@@ -18,7 +18,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-ppmi-red/25 bg-white/70 backdrop-blur-sm mb-3 shadow-sm shadow-ppmi-red/5"
+              className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-ppmi-red/25 bg-white/70 backdrop-blur-sm mb-3 shadow-sm shadow-ppmi-red/5 max-w-full md:whitespace-nowrap"
             >
               <span className="w-1.5 h-1.5 rounded-full bg-ppmi-red animate-pulse" />
               <span className="text-eyebrow text-text">{heroEyebrowKo.lead}</span>
@@ -33,7 +33,7 @@ export default function Hero() {
             >
               {heroContent.ko.headline.split("\n").map((line, i) => (
                 <span key={i} className="block">
-                  {i === 1 ? <span className="text-gradient md:whitespace-nowrap">{line}</span> : line}
+                  {i === 1 ? <span className="text-gradient lg:whitespace-nowrap">{line}</span> : line}
                 </span>
               ))}
             </motion.h1>
@@ -88,7 +88,7 @@ export default function Hero() {
                         {item.num}
                       </span>
                       <div>
-                        <div className="text-text font-medium md:whitespace-nowrap">{item.label}</div>
+                        <div className="text-text font-medium lg:whitespace-nowrap">{item.label}</div>
                         <div className="text-text-soft text-xs mt-0.5">{item.sub}</div>
                       </div>
                     </motion.div>

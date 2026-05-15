@@ -17,7 +17,7 @@ export default function InvestPage() {
         </p>
         <a
           href={`mailto:${siteConfig.email}`}
-          className="inline-flex items-center gap-2 text-ppmi-red font-medium hover:underline"
+          className="inline-flex items-center gap-2 text-ppmi-red font-medium hover:underline min-w-0 break-anywhere"
         >
           <Mail size={18} aria-hidden />
           {siteConfig.email}

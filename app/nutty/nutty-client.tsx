@@ -246,7 +246,7 @@ export default function NuttyPage() {
                   </div>
                   <div className="text-eyebrow text-cream/50 mb-2">{step.tag}</div>
                   <h3 className="text-lg font-display text-cream mb-1.5 lg:whitespace-nowrap">{step.title}</h3>
-                  <p className="text-cream/70 leading-snug">{step.desc}</p>
+                  <p className="text-cream/70 leading-snug break-keep">{step.desc}</p>
                 </motion.div>
               );
             })}
@@ -259,7 +259,7 @@ export default function NuttyPage() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="mt-5 text-center"
           >
-            <p className="text-cream/50 text-sm italic max-w-2xl mx-auto leading-snug">
+            <p className="text-cream/50 text-sm italic max-w-2xl mx-auto leading-snug prose-latin">
               IRONPET insights, NUT:TY recipes — testing signals and diet design in one
               connected flow from sample to bowl.
             </p>
@@ -317,7 +317,7 @@ export default function NuttyPage() {
                   <h3 className="text-lg lg:text-xl text-navy font-display mb-1.5 lg:whitespace-nowrap">
                     {f.title}
                   </h3>
-                  <p className="text-slate leading-snug">{f.desc}</p>
+                  <p className="text-slate leading-snug break-keep">{f.desc}</p>
                 </motion.div>
               );
             })}
@@ -391,7 +391,7 @@ export default function NuttyPage() {
                     <h3 className="text-lg lg:text-xl text-navy font-display mb-1.5">
                       {r.title}
                     </h3>
-                    <p className="text-slate leading-snug max-w-3xl">{r.desc}</p>
+                    <p className="text-slate leading-snug max-w-3xl break-keep">{r.desc}</p>
                   </div>
                 </motion.div>
               ))}
@@ -418,7 +418,7 @@ export default function NuttyPage() {
           >
             <div className="lg:col-span-7">
               <div className="text-eyebrow text-ppmi-red mb-2">Why NUT:TY</div>
-              <p className="text-eyebrow text-cream/70 mb-1.5 tracking-wide lg:whitespace-nowrap">
+              <p className="text-eyebrow text-cream/70 mb-1.5 tracking-wide lg:whitespace-nowrap prose-latin">
                 Data-Informed Pet Food Design
               </p>
               <h2 className="text-display text-2xl md:text-3xl lg:text-4xl text-cream leading-[1.1] mb-2 xl:whitespace-nowrap">
@@ -457,7 +457,7 @@ export default function NuttyPage() {
                 <div className="relative h-full flex flex-col justify-between text-cream">
                   <Star size={32} className="opacity-80" />
                   <div>
-                    <div className="text-eyebrow text-cream/70 mb-1 lg:whitespace-nowrap">
+                    <div className="text-eyebrow text-cream/70 mb-1 lg:whitespace-nowrap prose-latin">
                       Data-Informed Pet Food Design
                     </div>
                     <p className="text-display text-xl md:text-2xl font-display mb-2 leading-snug xl:whitespace-nowrap">

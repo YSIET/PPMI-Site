@@ -60,19 +60,19 @@ export default function BrandShowcase() {
                 >
                   Brand 0{i + 1}
                 </div>
-                <h3 className="text-display text-2xl md:text-3xl lg:text-4xl text-text mb-1 group-hover:translate-x-0.5 transition-transform md:whitespace-nowrap">
+                <h3 className="text-display text-2xl md:text-3xl lg:text-4xl text-text mb-1 group-hover:translate-x-0.5 transition-transform lg:whitespace-nowrap">
                   {brand.name}
                 </h3>
                 <p className="text-sm text-text-soft mb-2 leading-tight">
                   {brand.nameKo}
                 </p>
 
-                <p className="text-text leading-snug text-sm mb-2 line-clamp-3 flex-1 min-h-0">
+                <p className="text-text leading-snug text-sm mb-2 line-clamp-4 flex-1 min-h-0 break-keep">
                   {brand.description.ko}
                 </p>
 
                 <div className="mt-auto pt-2 border-t border-border">
-                  <span className="text-[11px] italic text-text-light leading-snug block">
+                  <span className="text-[11px] italic text-text-light leading-snug block prose-latin">
                     {brand.tagline.en}
                   </span>
                 </div>

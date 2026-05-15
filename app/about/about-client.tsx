@@ -1,5 +1,6 @@
 "use client";
 
+import type { ReactNode } from "react";
 import { motion } from "framer-motion";
 import { team } from "@/lib/data";
 import { Award, Beaker, GraduationCap, TrendingUp } from "lucide-react";
@@ -24,7 +25,7 @@ export default function AboutPage() {
               <br />
               <span className="text-gradient">헬스케어를 다시 정의합니다</span>
             </h1>
-            <p className="text-base md:text-lg text-text-soft leading-snug max-w-none lg:text-[1.0625rem] lg:whitespace-nowrap">
+            <p className="text-base md:text-lg text-text-soft leading-snug max-w-3xl lg:max-w-4xl lg:text-[1.0625rem]">
               PPMI는 KOLAS 인정 관계사의 분석력을 기반으로 반려동물 생체 데이터를 통합·해석하는 펫 헬스케어 데이터 기업입니다.
             </p>
           </motion.div>
@@ -48,7 +49,7 @@ export default function AboutPage() {
                 <p className="text-lg md:text-xl text-white leading-snug font-display">
                   검사가 곧 솔루션이 되는 펫 헬스케어 경험을 만든다.
                 </p>
-                <p className="mt-2 text-white/60 italic text-sm">
+                <p className="mt-2 text-white/60 italic text-sm prose-latin">
                   Make pet healthcare where testing itself becomes the solution.
                 </p>
               </div>
@@ -57,7 +58,7 @@ export default function AboutPage() {
                 <p className="text-lg md:text-xl text-white leading-snug font-display">
                   반려동물의 모든 생체 데이터가 만나는 곳.
                 </p>
-                <p className="mt-2 text-white/60 italic text-sm">
+                <p className="mt-2 text-white/60 italic text-sm prose-latin">
                   Where every biological signal of pets comes together.
                 </p>
               </div>
@@ -83,32 +84,57 @@ export default function AboutPage() {
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {[
-              {
-                icon: Award,
-                title: "KOLAS 인정 분석 파트너십",
-                desc: "관계사 (주)와이에스환경기술연구원(인정번호 제364호)의 KOLAS 인정 분석을 통해 반려동물 모발 등 시료 기반 정밀 검사 데이터를 확보합니다.",
-                en: "KOLAS-accredited testing through our partner, YS Institute of Environmental Technology.",
-              },
-              {
-                icon: Beaker,
-                title: "20년 분석 데이터 자산",
-                desc: "관계사가 20년간 축적한 KOLAS 인정 분석 데이터와 노하우를 PPMI가 펫 헬스케어 솔루션의 자산으로 활용합니다. 단기간에 복제될 수 없는 진입장벽입니다.",
-                en: "20 years of cumulative lab data — irreplicable.",
-              },
-              {
-                icon: TrendingUp,
-                title: "데이터 수직 통합",
-                desc: "관계사의 분석 → PPMI의 데이터 통합·해석 → 아이언펫·너티 솔루션까지, 한 그룹 안에서 완결되는 가치 사슬.",
-                en: "End-to-end vertical integration across the group: testing → data → solutions.",
-              },
-              {
-                icon: GraduationCap,
-                title: "연세대 교원창업",
-                desc: "이태규 대표(연세대 교수)를 중심으로 한 연구·산업 결합형 스타트업.",
-                en: "Spun out from Yonsei University — research-driven from day one.",
-              },
-            ].map((item, i) => {
+            {(
+              [
+                {
+                  icon: Award,
+                  title: "KOLAS 인정 분석 파트너십",
+                  desc: (
+                    <>
+                      관계사 (주)와이에스환경기술연구원(인정번호 제364호)의 KOLAS 인정 분석을 통해{" "}
+                      <br className="hidden sm:inline" />
+                      반려동물 모발 등 시료 기반 정밀 검사 데이터를 확보합니다.
+                    </>
+                  ),
+                  en: "KOLAS-accredited testing through our partner, YS Institute of Environmental Technology.",
+                },
+                {
+                  icon: Beaker,
+                  title: "20년 분석 데이터 자산",
+                  desc: (
+                    <>
+                      관계사가 20년간 축적한 KOLAS 인정 분석 데이터와 노하우를 PPMI가 펫 헬스케어 솔루션의 자산으로
+                      활용합니다. <br className="hidden sm:inline" />
+                      단기간에 복제될 수 없는 진입장벽입니다.
+                    </>
+                  ),
+                  en: "20 years of cumulative lab data — irreplicable.",
+                },
+                {
+                  icon: TrendingUp,
+                  title: "데이터 수직 통합",
+                  desc: (
+                    <>
+                      관계사의 분석 → PPMI의 데이터 통합·해석 → 아이언펫·너티 솔루션까지,{" "}
+                      <br className="hidden sm:inline" />
+                      한 그룹 안에서 완결되는 가치 사슬.
+                    </>
+                  ),
+                  en: "End-to-end vertical integration across the group: testing → data → solutions.",
+                },
+                {
+                  icon: GraduationCap,
+                  title: "연세대 교원창업",
+                  desc: "이태규 대표(연세대 교수)를 중심으로 한 연구·산업 결합형 스타트업.",
+                  en: "Spun out from Yonsei University — research-driven from day one.",
+                },
+              ] as {
+                icon: typeof Award;
+                title: string;
+                desc: ReactNode;
+                en: string;
+              }[]
+            ).map((item, i) => {
               const Icon = item.icon;
               return (
                 <motion.div
@@ -117,14 +143,14 @@ export default function AboutPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-50px" }}
                   transition={{ duration: 0.5, delay: i * 0.08 }}
-                  className="p-5 lg:p-6 rounded-2xl bg-white border border-border hover:border-ppmi-red/30 hover:shadow-lg hover:shadow-ppmi-red/5 transition-all"
+                  className="p-5 lg:p-6 rounded-2xl bg-white border border-border hover:border-ppmi-red/30 hover:shadow-lg hover:shadow-ppmi-red/5 transition-all min-w-0"
                 >
                   <div className="w-12 h-12 rounded-xl bg-ppmi-red-soft text-ppmi-red flex items-center justify-center mb-3">
                     <Icon size={22} />
                   </div>
-                  <h3 className="text-xl text-text font-semibold mb-2 md:whitespace-nowrap">{item.title}</h3>
-                  <p className="text-text-soft leading-snug mb-2">{item.desc}</p>
-                  <p className="text-xs text-text-light italic">{item.en}</p>
+                  <h3 className="text-xl text-text font-semibold mb-2 lg:whitespace-nowrap">{item.title}</h3>
+                  <p className="text-text-soft text-sm md:text-[0.9375rem] leading-snug mb-2 break-keep">{item.desc}</p>
+                  <p className="text-xs text-text-light italic prose-latin">{item.en}</p>
                 </motion.div>
               );
             })}

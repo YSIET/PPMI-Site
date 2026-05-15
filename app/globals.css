@@ -113,6 +113,21 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   letter-spacing: -0.011em;
+  /* 한글·조어별 줄바꿈: 음절·단어 중간 난절 방지 */
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+/* 긴 URL·이메일 등 — 해당 요소에만 break-all 적용 */
+.break-anywhere {
+  word-break: break-all;
+  overflow-wrap: anywhere;
+}
+
+/* 라틴 위주 문단(이탤릭 보조설명 등) — 긴 영문 단어 줄바꿈 */
+.prose-latin {
+  word-break: normal;
+  overflow-wrap: break-word;
 }
 
 /* 타이포그래피 */

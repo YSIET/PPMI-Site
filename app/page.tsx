@@ -14,7 +14,7 @@ export default function Home() {
       <section className="pt-6 md:pt-8 pb-4 md:pb-5 bg-white relative">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <header className="mb-4 md:mb-5">
-            <h2 className="text-display text-3xl md:text-4xl lg:text-5xl text-text leading-tight lg:whitespace-nowrap">
+            <h2 className="text-display text-3xl md:text-4xl lg:text-5xl text-text leading-tight xl:whitespace-nowrap">
               <span>{heroEyebrowKo.lead}</span>
               <span className="text-ppmi-red">{heroEyebrowKo.accent}</span>
             </h2>
@@ -46,10 +46,10 @@ export default function Home() {
                 key={item.title}
                 className="flex flex-col h-full p-4 md:p-5 rounded-xl bg-primary-soft/30 border border-primary/15"
               >
-                <div className="text-text font-semibold mb-1.5 lg:whitespace-nowrap">
+                <div className="text-text font-semibold mb-1.5 xl:whitespace-nowrap">
                   {item.title}
                 </div>
-                <div className="text-sm text-text-soft leading-snug">
+                <div className="text-sm text-text-soft leading-snug break-keep">
                   {item.desc}
                 </div>
               </div>
