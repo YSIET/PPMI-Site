@@ -12,7 +12,7 @@ export default function Home() {
       <BrandShowcase />
 
       {/* 회사 미션 섹션 */}
-      <section className="pt-12 md:pt-16 pb-6 md:pb-8 bg-white relative">
+      <section className="pt-8 md:pt-12 pb-5 md:pb-6 bg-white relative">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
             <div className="lg:col-span-5">
@@ -25,8 +25,8 @@ export default function Home() {
                 가 되는 것
               </h2>
             </div>
-            <div className="lg:col-span-7 space-y-6">
-              <p className="text-lg text-text leading-relaxed">
+            <div className="lg:col-span-7 space-y-4">
+              <p className="text-lg text-text leading-snug">
                 AI는 결국 데이터의 게임입니다. PPMI는 단순히 AI를 활용하는 회사가
                 아닌,{" "}
                 <span className="text-ppmi-red font-semibold">
@@ -34,7 +34,7 @@ export default function Home() {
                 </span>{" "}
                 펫 헬스케어 데이터 기업입니다.
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
                 {[
                   {
                     title: "20년 분석 데이터 자산",
@@ -51,10 +51,12 @@ export default function Home() {
                 ].map((item) => (
                   <div
                     key={item.title}
-                    className="p-5 rounded-xl bg-primary-soft/30 border border-primary/15"
+                    className="p-4 rounded-xl bg-primary-soft/30 border border-primary/15"
                   >
-                    <div className="text-text font-semibold mb-1">{item.title}</div>
-                    <div className="text-sm text-text-soft leading-relaxed">
+                    <div className="text-text font-semibold mb-1 md:whitespace-nowrap">
+                      {item.title}
+                    </div>
+                    <div className="text-sm text-text-soft leading-snug">
                       {item.desc}
                     </div>
                   </div>

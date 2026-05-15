@@ -90,7 +90,7 @@ export default function IronpetPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-28 pb-12 md:pt-32 md:pb-16 relative overflow-hidden bg-cream-warm">
+      <section className="pt-24 pb-8 md:pt-28 md:pb-12 relative overflow-hidden bg-cream-warm">
         <div className="absolute inset-0 bg-noise" />
         <div
           className="absolute top-0 right-0 w-[60%] h-[80%] rounded-full blur-3xl opacity-40"
@@ -110,10 +110,10 @@ export default function IronpetPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end"
+            className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-end"
           >
             <div className="lg:col-span-8">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-navy/15 bg-cream-warm/60 backdrop-blur-sm mb-5">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-navy/15 bg-cream-warm/60 backdrop-blur-sm mb-3">
                 <span
                   className="w-1.5 h-1.5 rounded-full"
                   style={{ background: BRAND_COLOR }}
@@ -121,7 +121,7 @@ export default function IronpetPage() {
                 <span className="text-eyebrow text-navy">Brand 01 · 반려동물 헬스케어</span>
               </div>
 
-              <h1 className="text-display text-5xl md:text-6xl lg:text-7xl text-navy leading-[0.95] mb-5 tracking-tight">
+              <h1 className="text-display text-5xl md:text-6xl lg:text-7xl text-navy leading-[0.95] mb-3 tracking-tight">
                 <span style={{ color: BRAND_COLOR }}>IRON</span>PET
               </h1>
 
@@ -129,20 +129,20 @@ export default function IronpetPage() {
                 건강한 습관의 완성.
               </p>
 
-              <p className="text-lg md:text-xl text-slate leading-relaxed max-w-2xl">
+              <p className="text-lg md:text-xl text-slate leading-snug max-w-2xl">
                 말 못 하는 아이의 몸이 보내는 신호를, 데이터로 먼저 듣습니다.
                 병원에 가지 않아도, 집에서 모발 한 가닥이면 충분합니다.
               </p>
 
-              <p className="text-sm text-slate-light mt-4 max-w-2xl leading-relaxed">
+              <p className="text-sm text-slate-light mt-3 max-w-2xl leading-snug">
                 검사 신청과 제품 확인은 아이언펫 공식 채널에서 진행됩니다.
               </p>
-              <div className="flex flex-wrap gap-3 mt-5">
+              <div className="flex flex-wrap gap-2 mt-4">
                 <a
                   href={IRONPET_DASHBOARD}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex items-center gap-2 px-6 py-3.5 bg-ppmi-red text-white rounded-full font-medium hover:bg-ppmi-red-dark transition-colors shadow-md shadow-ppmi-red/15"
+                  className="group inline-flex items-center gap-2 shrink-0 px-5 py-2.5 text-sm md:text-base bg-ppmi-red text-white rounded-full font-medium hover:bg-ppmi-red-dark transition-colors shadow-md shadow-ppmi-red/15 md:whitespace-nowrap"
                 >
                   아이언펫 검사 시작하기
                   <ArrowUpRight
@@ -154,7 +154,7 @@ export default function IronpetPage() {
                   href={IRONPET_STORE}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex items-center gap-2 px-6 py-3.5 border-2 border-navy/20 text-navy rounded-full font-medium hover:border-navy hover:bg-navy hover:text-cream transition-all"
+                  className="group inline-flex items-center gap-2 shrink-0 px-5 py-2.5 text-sm md:text-base border-2 border-navy/20 text-navy rounded-full font-medium hover:border-navy hover:bg-navy hover:text-cream transition-all md:whitespace-nowrap"
                 >
                   아이언펫 스토어 보기
                   <ArrowUpRight
@@ -172,7 +172,7 @@ export default function IronpetPage() {
               className="lg:col-span-4 flex justify-end"
             >
               <div
-                className="relative w-full max-w-sm aspect-square rounded-2xl p-8 overflow-hidden text-cream"
+                className="relative w-full max-w-sm aspect-square rounded-2xl p-6 overflow-hidden text-cream"
                 style={{
                   background: `linear-gradient(160deg, ${BRAND_COLOR}, #8b3f1e 90%)`,
                 }}
@@ -197,14 +197,14 @@ export default function IronpetPage() {
       </section>
 
       {/* YouTube 영상 */}
-      <section className="pb-24 bg-cream-warm">
+      <section className="pb-12 bg-cream-warm">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mb-10 max-w-3xl"
+            className="mb-6 max-w-3xl"
           >
             <div className="text-eyebrow text-ppmi-red mb-4">Watch</div>
             <h2 className="text-display text-3xl md:text-4xl lg:text-5xl text-navy leading-[1.1]">
@@ -234,7 +234,7 @@ export default function IronpetPage() {
 
       {/* 페인포인트 — 오렌지 톤 배경 */}
       <section
-        className="py-16 md:py-20 relative overflow-hidden"
+        className="py-10 md:py-12 relative overflow-hidden"
         style={{
           background: `linear-gradient(180deg, ${BRAND_COLOR} 0%, #b6612e 100%)`,
         }}
@@ -248,7 +248,7 @@ export default function IronpetPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="max-w-3xl mb-10"
+            className="max-w-3xl mb-6"
           >
             <div className="text-eyebrow text-cream/70 mb-4">The Problem</div>
             <h2 className="text-display text-3xl md:text-4xl lg:text-5xl text-cream leading-[1.05] mb-4">
@@ -262,7 +262,7 @@ export default function IronpetPage() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {painPoints.map((p, i) => {
               const Icon = p.icon;
               return (
@@ -272,13 +272,13 @@ export default function IronpetPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-50px" }}
                   transition={{ duration: 0.6, delay: i * 0.12 }}
-                  className="p-5 lg:p-7 rounded-2xl bg-cream/10 border border-cream/15 backdrop-blur-sm hover:bg-cream/15 transition-colors"
+                  className="p-4 lg:p-5 rounded-2xl bg-cream/10 border border-cream/15 backdrop-blur-sm hover:bg-cream/15 transition-colors"
                 >
-                  <div className="w-14 h-14 rounded-xl bg-cream/15 text-cream flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 rounded-xl bg-cream/15 text-cream flex items-center justify-center mb-3">
                     <Icon size={26} />
                   </div>
-                  <h3 className="text-2xl font-display text-cream mb-3">{p.title}</h3>
-                  <p className="text-cream/80 leading-relaxed">{p.desc}</p>
+                  <h3 className="text-xl font-display text-cream mb-2">{p.title}</h3>
+                  <p className="text-cream/80 leading-snug">{p.desc}</p>
                 </motion.div>
               );
             })}
@@ -287,14 +287,14 @@ export default function IronpetPage() {
       </section>
 
       {/* 솔루션 헤드라인 + 프로세스 */}
-      <section className="py-16 md:py-20 bg-cream-warm">
+      <section className="py-10 md:py-12 bg-cream-warm">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="max-w-3xl mb-10"
+            className="max-w-3xl mb-6"
           >
             <div className="text-eyebrow text-ppmi-red mb-4">Our Solution</div>
             <h2 className="text-display text-3xl md:text-4xl lg:text-5xl text-navy leading-[1.05] mb-4">
@@ -302,13 +302,13 @@ export default function IronpetPage() {
               <br />
               <span style={{ color: BRAND_COLOR }}>비대면 · 저비용</span> 사전 관리
             </h2>
-            <p className="text-lg text-slate leading-relaxed">
+            <p className="text-lg text-slate leading-snug">
               집에서 보호자가 직접 채취한 모발 한 가닥. 관계사 시험기관의 측정 결과를 바탕으로
               PPMI가 그 안에 담긴 영양 균형, 중금속 노출, 스트레스 신호를 데이터로 풀어냅니다.
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {process.map((p, i) => {
               const Icon = p.icon;
               return (
@@ -318,13 +318,13 @@ export default function IronpetPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-50px" }}
                   transition={{ duration: 0.5, delay: i * 0.1 }}
-                  className="relative p-8 rounded-2xl bg-cream border border-navy/5"
+                  className="relative p-5 lg:p-6 rounded-2xl bg-cream border border-navy/5"
                 >
                   {i < process.length - 1 && (
                     <div className="hidden lg:block absolute top-1/2 -right-3 w-6 h-px bg-primary-dark/15" />
                   )}
                   <div
-                    className="w-12 h-12 rounded-xl flex items-center justify-center mb-4"
+                    className="w-12 h-12 rounded-xl flex items-center justify-center mb-3"
                     style={{
                       background: `${BRAND_COLOR}1a`,
                       color: BRAND_COLOR,
@@ -339,8 +339,8 @@ export default function IronpetPage() {
                     {p.num}
                   </div>
                   <div className="text-eyebrow text-slate-light mb-2">{p.titleEn}</div>
-                  <h3 className="text-xl text-navy font-semibold mb-3">{p.title}</h3>
-                  <p className="text-sm text-slate leading-relaxed">{p.desc}</p>
+                  <h3 className="text-lg text-navy font-semibold mb-2 md:whitespace-nowrap">{p.title}</h3>
+                  <p className="text-sm text-slate leading-snug">{p.desc}</p>
                 </motion.div>
               );
             })}
@@ -349,7 +349,7 @@ export default function IronpetPage() {
       </section>
 
       {/* Before / After 비교 */}
-      <section className="py-16 md:py-20 bg-primary-dark text-white relative overflow-hidden">
+      <section className="py-10 md:py-12 bg-primary-dark text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-noise opacity-50" />
         <div
           className="absolute -top-40 right-0 w-[60%] h-[80%] rounded-full blur-3xl opacity-25"
@@ -362,7 +362,7 @@ export default function IronpetPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="max-w-3xl mb-10"
+            className="max-w-3xl mb-6"
           >
             <div className="text-eyebrow text-ppmi-red mb-4">Before / After</div>
             <h2 className="text-display text-3xl md:text-4xl lg:text-5xl text-cream leading-[1.05]">
@@ -372,28 +372,28 @@ export default function IronpetPage() {
             </h2>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6 }}
-              className="p-5 lg:p-7 rounded-2xl border border-cream/10 bg-cream/[0.02]"
+              className="p-4 lg:p-5 rounded-2xl border border-cream/10 bg-cream/[0.02]"
             >
-              <div className="flex items-center gap-3 mb-5">
+              <div className="flex items-center gap-3 mb-3">
                 <div className="w-10 h-10 rounded-full bg-cream/10 flex items-center justify-center">
                   <X size={18} className="text-cream/60" />
                 </div>
                 <div className="text-eyebrow text-cream/60">Before — 기존 방식</div>
               </div>
-              <h3 className="text-2xl font-display text-cream mb-4">
+              <h3 className="text-xl font-display text-cream mb-3">
                 동물병원에만 의존
               </h3>
-              <ul className="space-y-4">
+              <ul className="space-y-3">
                 {compareBefore.map((item) => (
                   <li
                     key={item}
-                    className="flex items-start gap-3 text-cream/70 text-sm leading-relaxed"
+                    className="flex items-start gap-3 text-cream/70 text-sm leading-snug"
                   >
                     <span className="mt-1.5 w-1 h-1 rounded-full bg-cream/40 shrink-0" />
                     {item}
@@ -407,27 +407,27 @@ export default function IronpetPage() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: 0.15 }}
-              className="p-5 lg:p-7 rounded-2xl relative overflow-hidden"
+              className="p-4 lg:p-5 rounded-2xl relative overflow-hidden"
               style={{
                 background: `linear-gradient(160deg, ${BRAND_COLOR}, var(--primary-dark) 100%)`,
               }}
             >
               <div className="absolute -top-20 -right-20 w-56 h-56 rounded-full bg-cream/10 blur-3xl" />
               <div className="relative">
-                <div className="flex items-center gap-3 mb-5">
+                <div className="flex items-center gap-3 mb-3">
                   <div className="w-10 h-10 rounded-full bg-cream/20 flex items-center justify-center">
                     <Check size={18} className="text-cream" />
                   </div>
                   <div className="text-eyebrow text-cream/80">After — 아이언펫</div>
                 </div>
-                <h3 className="text-2xl font-display text-cream mb-4">
+                <h3 className="text-xl font-display text-cream mb-3">
                   데이터 기반 사전 관리
                 </h3>
-                <ul className="space-y-4">
+                <ul className="space-y-3">
                   {compareAfter.map((item) => (
                     <li
                       key={item}
-                      className="flex items-start gap-3 text-cream text-sm leading-relaxed"
+                      className="flex items-start gap-3 text-cream text-sm leading-snug"
                     >
                       <Check size={14} className="mt-1 text-cream shrink-0" />
                       {item}
@@ -441,26 +441,26 @@ export default function IronpetPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 md:py-20 bg-cream-warm">
+      <section className="py-10 md:py-12 bg-cream-warm">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="relative overflow-hidden rounded-2xl p-10 lg:p-16 text-cream"
+            className="relative overflow-hidden rounded-2xl p-6 lg:p-10 text-cream"
             style={{
               background: `linear-gradient(135deg, var(--primary-dark) 0%, ${BRAND_COLOR} 100%)`,
             }}
           >
             <div className="absolute inset-0 bg-noise opacity-30" />
-            <div className="relative grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-              <div className="lg:col-span-8 space-y-5">
+            <div className="relative grid grid-cols-1 lg:grid-cols-12 gap-5 items-center">
+              <div className="lg:col-span-8 space-y-3">
                 <div>
                   <h2 className="text-display text-3xl md:text-4xl lg:text-5xl leading-[1.1] mb-3">
                     아이언펫 공식 채널에서 시작하세요
                   </h2>
-                  <p className="text-cream/85 leading-relaxed max-w-xl">
+                  <p className="text-cream/85 leading-snug max-w-xl text-sm">
                     아이언펫 검사 신청과 관련 제품 확인은 공식 채널에서 진행됩니다. 검사
                     데이터가 펫푸드 설계로 이어지는 이야기는 PPMI 사이트의{" "}
                     <Link href="/nutty" className="text-gold hover:text-gold-light underline-offset-4 hover:underline font-medium">
@@ -469,12 +469,12 @@ export default function IronpetPage() {
                     페이지에서도 이어집니다.
                   </p>
                 </div>
-                <div className="flex flex-wrap gap-3">
+                <div className="flex flex-wrap gap-2">
                   <a
                     href={IRONPET_DASHBOARD}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group inline-flex items-center gap-2 px-5 py-3 bg-cream text-navy rounded-full text-sm font-medium hover:bg-gold transition-colors"
+                    className="group inline-flex items-center gap-2 shrink-0 px-4 py-2 bg-cream text-navy rounded-full text-xs font-medium hover:bg-gold transition-colors md:whitespace-nowrap"
                   >
                     아이언펫 검사 시작하기
                     <ArrowUpRight size={16} className="opacity-80 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
@@ -483,7 +483,7 @@ export default function IronpetPage() {
                     href={IRONPET_STORE}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group inline-flex items-center gap-2 px-5 py-3 border border-cream/40 text-cream rounded-full text-sm font-medium hover:bg-cream/10 transition-colors"
+                    className="group inline-flex items-center gap-2 shrink-0 px-4 py-2 border border-cream/40 text-cream rounded-full text-xs font-medium hover:bg-cream/10 transition-colors md:whitespace-nowrap"
                   >
                     아이언펫 스토어 보기
                     <ArrowUpRight size={16} className="opacity-80 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />

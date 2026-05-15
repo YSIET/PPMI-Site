@@ -79,7 +79,7 @@ export default function NuttyPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-28 pb-12 md:pt-32 md:pb-16 relative overflow-hidden bg-cream-warm">
+      <section className="pt-24 pb-8 md:pt-28 md:pb-12 relative overflow-hidden bg-cream-warm">
         <div className="absolute inset-0 bg-noise" />
         <div
           className="absolute top-0 right-0 w-[60%] h-[80%] rounded-full blur-3xl opacity-35"
@@ -94,10 +94,10 @@ export default function NuttyPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end"
+            className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-end"
           >
             <div className="lg:col-span-8">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-navy/15 bg-cream-warm/60 backdrop-blur-sm mb-5">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-navy/15 bg-cream-warm/60 backdrop-blur-sm mb-3">
                 <span
                   className="w-1.5 h-1.5 rounded-full"
                   style={{ background: BRAND_COLOR }}
@@ -105,7 +105,7 @@ export default function NuttyPage() {
                 <span className="text-eyebrow text-navy">Brand 02 · 반려동물 펫푸드</span>
               </div>
 
-              <h1 className="text-display text-5xl md:text-6xl lg:text-7xl text-navy leading-[0.95] mb-5 tracking-tight">
+              <h1 className="text-display text-5xl md:text-6xl lg:text-7xl text-navy leading-[0.95] mb-3 tracking-tight">
                 NUT
                 <span style={{ color: BRAND_COLOR }}>:</span>TY
               </h1>
@@ -114,21 +114,21 @@ export default function NuttyPage() {
                 건강한 한 입, 맛있는 습관.
               </p>
 
-              <p className="text-lg md:text-xl text-slate leading-relaxed max-w-2xl">
+              <p className="text-lg md:text-xl text-slate leading-snug max-w-2xl">
                 너티는 아이언펫 검사 흐름에서 확인되는 반려동물의 영양 상태와 생체 데이터
                 인사이트를 바탕으로, 더 정밀한 식이 설계를 지향하는 PPMI의 데이터 기반
                 펫푸드 브랜드입니다.
               </p>
 
-              <p className="text-sm text-slate-light mt-4 max-w-2xl leading-relaxed">
+              <p className="text-sm text-slate-light mt-3 max-w-2xl leading-snug">
                 너티 제품 확인과 구매는 공식 판매 채널에서 진행됩니다.
               </p>
-              <div className="flex flex-wrap gap-3 mt-5">
+              <div className="flex flex-wrap gap-2 mt-4">
                 <a
                   href={NUTTY_STORE}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex items-center gap-2 px-6 py-3.5 bg-navy text-cream rounded-full font-medium hover:bg-primary-dark transition-colors"
+                  className="group inline-flex items-center gap-2 shrink-0 px-5 py-2.5 text-sm md:text-base bg-navy text-cream rounded-full font-medium hover:bg-primary-dark transition-colors md:whitespace-nowrap"
                 >
                   너티 제품 보러가기
                   <ArrowUpRight
@@ -140,7 +140,7 @@ export default function NuttyPage() {
                   href={NAVER_SMARTSTORE}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex items-center gap-2 px-6 py-3.5 border-2 border-navy/20 text-navy rounded-full font-medium hover:border-navy hover:bg-navy hover:text-cream transition-all"
+                  className="group inline-flex items-center gap-2 shrink-0 px-5 py-2.5 text-sm md:text-base border-2 border-navy/20 text-navy rounded-full font-medium hover:border-navy hover:bg-navy hover:text-cream transition-all md:whitespace-nowrap"
                 >
                   네이버 스마트스토어에서 보기
                   <ArrowUpRight
@@ -158,7 +158,7 @@ export default function NuttyPage() {
               className="lg:col-span-4 flex justify-end"
             >
               <div
-                className="relative w-full max-w-sm aspect-square rounded-2xl p-8 overflow-hidden text-navy"
+                className="relative w-full max-w-sm aspect-square rounded-2xl p-6 overflow-hidden text-navy"
                 style={{
                   background: `linear-gradient(160deg, ${BRAND_COLOR}, #d4b96a 100%)`,
                 }}
@@ -170,9 +170,8 @@ export default function NuttyPage() {
                   <div>
                     <div className="text-eyebrow text-navy/70 mb-3">Pet Food</div>
                     <div className="text-display text-2xl md:text-3xl mb-2 leading-tight">
-                      아이언펫 데이터에서 출발한
-                      <br />
-                      펫푸드, 너티
+                      <span className="lg:whitespace-nowrap">아이언펫 데이터에서 출발한 </span>
+                      <span className="lg:whitespace-nowrap">펫푸드, 너티</span>
                     </div>
                   </div>
                 </div>
@@ -183,7 +182,7 @@ export default function NuttyPage() {
       </section>
 
       {/* 데이터 → 푸드 연결 도식 */}
-      <section className="py-16 md:py-20 bg-primary-dark text-white relative overflow-hidden">
+      <section className="py-10 md:py-12 bg-primary-dark text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-noise opacity-50" />
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80%] h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
 
@@ -193,7 +192,7 @@ export default function NuttyPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="max-w-3xl mb-10"
+            className="max-w-3xl mb-6"
           >
             <div className="text-eyebrow text-ppmi-red mb-4">Data → Food</div>
             <h2 className="text-display text-3xl md:text-4xl lg:text-5xl text-cream leading-[1.05]">
@@ -203,7 +202,7 @@ export default function NuttyPage() {
             </h2>
           </motion.div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-4 items-stretch">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-4 items-stretch">
             {[
               {
                 icon: Database,
@@ -232,7 +231,7 @@ export default function NuttyPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-50px" }}
                   transition={{ duration: 0.6, delay: i * 0.15 }}
-                  className="relative p-5 lg:p-7 rounded-2xl border border-cream/10 bg-cream/[0.02] flex flex-col"
+                  className="relative p-4 lg:p-5 rounded-2xl border border-cream/10 bg-cream/[0.02] flex flex-col"
                 >
                   {i < arr.length - 1 && (
                     <div className="hidden lg:flex absolute top-1/2 -right-4 w-8 h-8 rounded-full bg-ppmi-red/20 border border-gold/40 items-center justify-center z-10">
@@ -240,14 +239,14 @@ export default function NuttyPage() {
                     </div>
                   )}
                   <div
-                    className="w-14 h-14 rounded-xl flex items-center justify-center mb-4"
+                    className="w-12 h-12 rounded-xl flex items-center justify-center mb-3"
                     style={{ background: `${BRAND_COLOR}25`, color: BRAND_COLOR }}
                   >
                     <Icon size={26} />
                   </div>
                   <div className="text-eyebrow text-cream/50 mb-3">{step.tag}</div>
-                  <h3 className="text-2xl font-display text-cream mb-3">{step.title}</h3>
-                  <p className="text-cream/70 leading-relaxed">{step.desc}</p>
+                  <h3 className="text-xl font-display text-cream mb-2 md:whitespace-nowrap">{step.title}</h3>
+                  <p className="text-cream/70 leading-snug">{step.desc}</p>
                 </motion.div>
               );
             })}
@@ -258,9 +257,9 @@ export default function NuttyPage() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="mt-12 text-center"
+            className="mt-8 text-center"
           >
-            <p className="text-cream/50 text-sm italic max-w-2xl mx-auto leading-relaxed">
+            <p className="text-cream/50 text-sm italic max-w-2xl mx-auto leading-snug">
               IRONPET insights, NUT:TY recipes — testing signals and diet design in one
               connected flow from sample to bowl.
             </p>
@@ -269,14 +268,14 @@ export default function NuttyPage() {
       </section>
 
       {/* 제품 특징 4가지 */}
-      <section className="py-16 md:py-20 bg-cream-warm">
+      <section className="py-10 md:py-12 bg-cream-warm">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="max-w-3xl mb-10"
+            className="max-w-3xl mb-6"
           >
             <div className="text-eyebrow text-ppmi-red mb-4">Product Pillars</div>
             <h2 className="text-display text-3xl md:text-4xl lg:text-5xl text-navy leading-[1.05] mb-4">
@@ -284,13 +283,13 @@ export default function NuttyPage() {
               <br />
               네 가지 약속
             </h2>
-            <p className="text-lg text-slate leading-relaxed">
+            <p className="text-lg text-slate leading-snug">
               맛있게 먹어야 의미 있는 영양이 됩니다. 너티는 기호성과 영양, 기능성과
               안전성 — 어느 하나도 양보하지 않습니다.
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {features.map((f, i) => {
               const Icon = f.icon;
               return (
@@ -300,11 +299,11 @@ export default function NuttyPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-50px" }}
                   transition={{ duration: 0.6, delay: (i % 2) * 0.1 }}
-                  className="group relative p-5 lg:p-7 rounded-2xl bg-cream border border-navy/5 hover:border-navy/20 transition-all"
+                  className="group relative p-4 lg:p-5 rounded-2xl bg-cream border border-navy/5 hover:border-navy/20 transition-all"
                 >
-                  <div className="flex items-start justify-between mb-5">
+                  <div className="flex items-start justify-between mb-4">
                     <div
-                      className="w-14 h-14 rounded-xl flex items-center justify-center"
+                      className="w-12 h-12 rounded-xl flex items-center justify-center"
                       style={{
                         background: `${BRAND_COLOR}1f`,
                         color: BRAND_COLOR,
@@ -315,10 +314,10 @@ export default function NuttyPage() {
                     <span className="text-eyebrow text-slate-light">{f.code}</span>
                   </div>
                   <div className="text-eyebrow text-slate-light mb-2">{f.titleEn}</div>
-                  <h3 className="text-2xl lg:text-3xl text-navy font-display mb-4">
+                  <h3 className="text-xl lg:text-2xl text-navy font-display mb-2 md:whitespace-nowrap">
                     {f.title}
                   </h3>
-                  <p className="text-slate leading-relaxed">{f.desc}</p>
+                  <p className="text-slate leading-snug">{f.desc}</p>
                 </motion.div>
               );
             })}
@@ -327,14 +326,14 @@ export default function NuttyPage() {
       </section>
 
       {/* 향후 확장 로드맵 — 타임라인 */}
-      <section className="py-16 md:py-20 bg-cream-warm">
+      <section className="py-10 md:py-12 bg-cream-warm">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="max-w-3xl mb-10"
+            className="max-w-3xl mb-6"
           >
             <div className="text-eyebrow text-ppmi-red mb-4">Roadmap</div>
             <h2 className="text-display text-3xl md:text-4xl lg:text-5xl text-navy leading-[1.05]">
@@ -350,7 +349,7 @@ export default function NuttyPage() {
               style={{ background: `${BRAND_COLOR}40` }}
             />
 
-            <div className="space-y-6">
+            <div className="space-y-4">
               {roadmap.map((r, i) => (
                 <motion.div
                   key={r.phase}
@@ -372,7 +371,7 @@ export default function NuttyPage() {
                   </div>
 
                   <div
-                    className={`p-5 lg:p-7 rounded-2xl border transition-all ${
+                    className={`p-4 lg:p-5 rounded-2xl border transition-all ${
                       r.active
                         ? "bg-cream border-navy/15 shadow-sm"
                         : "bg-cream/60 border-navy/5"
@@ -389,10 +388,10 @@ export default function NuttyPage() {
                         · {r.status}
                       </span>
                     </div>
-                    <h3 className="text-2xl lg:text-3xl text-navy font-display mb-3">
+                    <h3 className="text-xl lg:text-2xl text-navy font-display mb-2">
                       {r.title}
                     </h3>
-                    <p className="text-slate leading-relaxed max-w-3xl">{r.desc}</p>
+                    <p className="text-slate leading-snug max-w-3xl">{r.desc}</p>
                   </div>
                 </motion.div>
               ))}
@@ -402,7 +401,7 @@ export default function NuttyPage() {
       </section>
 
       {/* 차별점 강조 — 다크 네이비 */}
-      <section className="py-16 md:py-20 bg-primary-dark text-white relative overflow-hidden">
+      <section className="py-10 md:py-12 bg-primary-dark text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-noise opacity-40" />
         <div
           className="absolute -top-40 -right-40 w-[60%] h-[80%] rounded-full blur-3xl opacity-30"
@@ -415,17 +414,17 @@ export default function NuttyPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center"
+            className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center"
           >
             <div className="lg:col-span-7">
               <div className="text-eyebrow text-ppmi-red mb-4">Why NUT:TY</div>
-              <p className="text-eyebrow text-cream/70 mb-2 tracking-wide">
+              <p className="text-eyebrow text-cream/70 mb-2 tracking-wide md:whitespace-nowrap">
                 Data-Informed Pet Food Design
               </p>
-              <h2 className="text-display text-3xl md:text-4xl lg:text-5xl text-cream leading-[1.05] mb-4">
+              <h2 className="text-display text-3xl md:text-4xl lg:text-5xl text-cream leading-[1.05] mb-3 lg:whitespace-nowrap">
                 검사 데이터에서 출발하는 펫푸드
               </h2>
-              <p className="text-lg text-cream/75 leading-relaxed max-w-2xl mb-5">
+              <p className="text-lg text-cream/75 leading-snug max-w-2xl mb-4">
                 너티는 아이언펫 검사 흐름에서 확인되는 반려동물의 영양 상태와 생체 데이터
                 인사이트를 바탕으로, 더 정밀한 식이 설계를 지향하는 PPMI의 데이터 기반
                 펫푸드 브랜드입니다. 일반적인 영양 가이드라인만 따르는 사료와 달리, 검사
@@ -433,7 +432,7 @@ export default function NuttyPage() {
               </p>
               <Link
                 href="/ironpet"
-                className="group inline-flex items-center gap-2 text-gold font-medium hover:text-gold-light transition-colors"
+                className="group inline-flex items-center gap-2 shrink-0 text-gold font-medium hover:text-gold-light transition-colors md:whitespace-nowrap"
               >
                 아이언펫 검사 자세히 보기
                 <ArrowRight
@@ -449,7 +448,7 @@ export default function NuttyPage() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.7 }}
-                className="relative aspect-square rounded-2xl p-10 overflow-hidden"
+                className="relative aspect-square rounded-2xl p-6 lg:p-8 overflow-hidden"
                 style={{
                   background: `linear-gradient(160deg, ${BRAND_COLOR}, var(--primary-dark) 80%)`,
                 }}
@@ -458,13 +457,13 @@ export default function NuttyPage() {
                 <div className="relative h-full flex flex-col justify-between text-cream">
                   <Star size={40} className="opacity-80" />
                   <div>
-                    <div className="text-eyebrow text-cream/70 mb-3">
+                    <div className="text-eyebrow text-cream/70 mb-2 md:whitespace-nowrap">
                       Data-Informed Pet Food Design
                     </div>
-                    <p className="text-display text-2xl md:text-3xl font-display mb-4 leading-snug">
+                    <p className="text-display text-2xl md:text-3xl font-display mb-3 leading-snug lg:whitespace-nowrap">
                       아이언펫 검사 흐름과 연결되는 데이터 기반 펫푸드
                     </p>
-                    <p className="text-cream/85 text-sm leading-relaxed">
+                    <p className="text-cream/85 text-sm leading-snug">
                       검사에서 정리된 영양·생체 신호가 식이 설계로 이어지도록, 아이언펫과
                       너티가 한 데이터 루프 안에서 맞물려 돌아갑니다.
                     </p>
@@ -477,19 +476,19 @@ export default function NuttyPage() {
       </section>
 
       {/* 공식 판매 채널 */}
-      <section className="py-16 md:py-20 bg-cream-warm">
+      <section className="py-10 md:py-12 bg-cream-warm">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="max-w-3xl mb-8"
+            className="max-w-3xl mb-5"
           >
-            <h2 className="text-display text-3xl md:text-4xl lg:text-5xl text-navy leading-[1.05] mb-4">
+            <h2 className="text-display text-3xl md:text-4xl lg:text-5xl text-navy leading-[1.05] mb-3 lg:whitespace-nowrap">
               너티 공식 판매 채널에서 확인하세요
             </h2>
-            <p className="text-lg text-slate leading-relaxed">
+            <p className="text-lg text-slate leading-snug">
               너티 제품 정보와 구매는 공식 판매 채널에서 확인하실 수 있습니다. 검사 흐름과
               데이터 연결은{" "}
               <Link href="/ironpet" className="text-ppmi-red font-medium hover:underline underline-offset-4">
@@ -498,12 +497,12 @@ export default function NuttyPage() {
               에서 이어집니다.
             </p>
           </motion.div>
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap gap-2">
             <a
               href={NUTTY_STORE}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center gap-2 px-5 py-3 bg-navy text-cream rounded-full text-sm font-medium hover:bg-primary-dark transition-colors"
+              className="group inline-flex items-center gap-2 shrink-0 px-4 py-2 bg-navy text-cream rounded-full text-xs font-medium hover:bg-primary-dark transition-colors md:text-sm md:whitespace-nowrap"
             >
               너티 제품 보러가기
               <ArrowUpRight size={16} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
@@ -512,7 +511,7 @@ export default function NuttyPage() {
               href={NAVER_SMARTSTORE}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center gap-2 px-5 py-3 border-2 border-navy/20 text-navy rounded-full text-sm font-medium hover:border-navy hover:bg-navy hover:text-cream transition-colors"
+              className="group inline-flex items-center gap-2 shrink-0 px-4 py-2 border-2 border-navy/20 text-navy rounded-full text-xs font-medium hover:border-navy hover:bg-navy hover:text-cream transition-colors md:text-sm md:whitespace-nowrap"
             >
               네이버 스마트스토어에서 보기
               <ArrowUpRight size={16} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />

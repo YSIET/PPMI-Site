@@ -7,14 +7,14 @@ import { brands } from "@/lib/data";
 
 export default function BrandShowcase() {
   return (
-    <section className="pt-12 pb-12 md:pt-16 md:pb-16 bg-background relative">
+    <section className="pt-10 pb-10 md:pt-12 md:pb-12 bg-background relative">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="max-w-3xl mb-8 md:mb-10"
+          className="max-w-3xl mb-5 md:mb-6"
         >
           <div className="text-eyebrow text-ppmi-red mb-3">Our Brands</div>
           <h2 className="text-display text-3xl md:text-4xl lg:text-5xl text-text mb-4">
@@ -23,7 +23,7 @@ export default function BrandShowcase() {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-start">
           {brands.map((brand, i) => (
             <motion.div
               key={brand.id}
@@ -34,7 +34,7 @@ export default function BrandShowcase() {
             >
               <Link
                 href={brand.href}
-                className="group block relative rounded-2xl bg-white border border-border p-6 lg:p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/5 hover:border-primary/20"
+                className="group block relative rounded-2xl bg-white border border-border p-5 lg:p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/5 hover:border-primary/20"
                 style={{
                   borderTopWidth: "4px",
                   borderTopColor: brand.color,
@@ -59,16 +59,16 @@ export default function BrandShowcase() {
                 >
                   Brand 0{i + 1}
                 </div>
-                <h3 className="text-display text-3xl lg:text-4xl text-text mb-2 group-hover:translate-x-0.5 transition-transform">
+                <h3 className="text-display text-3xl lg:text-4xl text-text mb-1.5 group-hover:translate-x-0.5 transition-transform md:whitespace-nowrap">
                   {brand.name}
                 </h3>
-                <p className="text-sm text-text-soft mb-5">{brand.nameKo}</p>
+                <p className="text-sm text-text-soft mb-3">{brand.nameKo}</p>
 
-                <p className="text-text leading-relaxed text-sm mb-5 line-clamp-3">
+                <p className="text-text leading-snug text-sm mb-4 line-clamp-3">
                   {brand.description.ko}
                 </p>
 
-                <div className="pt-4 border-t border-border">
+                <div className="pt-3 border-t border-border">
                   <span className="text-xs italic text-text-light">
                     {brand.tagline.en}
                   </span>

@@ -28,7 +28,7 @@ function Counter({ value, suffix }: { value: number; suffix: string }) {
 
 export default function Stats() {
   return (
-    <section className="pt-12 pb-12 md:pt-16 md:pb-16 bg-primary-soft/40 relative overflow-hidden">
+    <section className="pt-8 pb-8 md:pt-12 md:pb-12 bg-primary-soft/40 relative overflow-hidden">
       {/* 얇은 격자 패턴 */}
       <div className="absolute inset-0 bg-grid-soft" />
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[60%] h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
@@ -39,7 +39,7 @@ export default function Stats() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-8 md:mb-10"
+          className="text-center mb-6 md:mb-7"
         >
           <div className="text-eyebrow text-ppmi-red mb-3">By the Numbers</div>
           <h2 className="text-display text-3xl md:text-4xl lg:text-5xl text-text max-w-3xl mx-auto">
@@ -49,7 +49,7 @@ export default function Stats() {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-4">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-3">
           {stats.map((stat, i) => (
             <motion.div
               key={i}
@@ -57,7 +57,7 @@ export default function Stats() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: i * 0.08 }}
-              className="text-center px-3 py-4 lg:py-6 lg:border-l lg:border-text/10 first:lg:border-l-0"
+              className="text-center px-2 py-3 lg:py-4 lg:border-l lg:border-text/10 first:lg:border-l-0"
             >
               <div className="text-display text-5xl md:text-6xl text-ppmi-red mb-2 leading-none tabular-nums">
                 <Counter value={stat.value} suffix={stat.suffix} />
